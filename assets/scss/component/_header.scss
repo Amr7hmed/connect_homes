@@ -1,0 +1,232 @@
+// Navbar
+.nav {
+  width: 100%;
+  position: relative;
+  &__contener {
+    width: 95%;
+    margin: 0 auto;
+  }
+  // Navbar Top
+  &__top {
+    width: 100%;
+    height: 40px;
+    background-color: $gray;
+    ul {
+      height: 20px;
+      width: 100%;
+      text-align: right;
+      margin: 10px 0;
+      li {
+        color: $white_two;
+        display: inline-block;
+        font-family: $font_lato;
+        font-style: normal;
+        font-weight: normal;
+        $font_14: 14px;
+        line-height: 17px;
+        margin-right: 15px;
+        i {
+          font-size: 18px !important;
+        }
+        &:last-child {
+          margin-right: 0;
+          margin-left: 25px;
+        }
+      }
+    }
+  }
+  // Navbar Bottom
+  &__bottom {
+    width: 100%;
+    height: 80px;
+    background-color: $white_three;
+    border: 1px solid #d4d4d4;
+    box-sizing: border-box;
+    font-family: $font_poppins;
+    .nav__contener {
+      height: 60px;
+      margin: 10px auto;
+      // Navbar Logo
+      .navbar-brand {
+        padding: 0 !important;
+        img {
+          width: 100px;
+          height: 60px;
+        }
+      }
+      // Navbar List
+      nav.navbar {
+        padding: 0 !important;
+        ul.navbar-nav {
+          li {
+            display: inline-block;
+            padding: 10px 15px;
+            a {
+              display: block;
+              color: $black;
+              font-size: $font_16;
+              font-weight: 500;
+            }
+          }
+          li.active {
+            a {
+              border-bottom: 2px solid $red !important;
+              color: $red !important;
+              font-size: $font_16;
+              font-weight: 500;
+            }
+          }
+        }
+        // Navbar Form
+        form.form-inline {
+          .btn_navbar {
+            height: 44px;
+            padding: 10px 29px;
+            font-weight: 600;
+            font-size: $font_14;
+            line-height: 17px;
+            font-family: $font_lato;
+            font-style: normal;
+          }
+          .porperty {
+            background-color: transparent;
+            margin: 0 20px;
+            color: $red;
+            border: 1px solid $red;
+          }
+          .register {
+            background-color: $red !important;
+            color: $white_two;
+          }
+        }
+      }
+    }
+  }
+
+  // Modal
+  .modal {
+    // Modal Register
+    &__register {
+      .modal-dialog {
+        height: 90%;
+        .modal-content {
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+      .modal-header {
+        border: none;
+      }
+      .modal-body {
+        padding: 0 2rem;
+        h5 {
+          margin: 15px 0;
+        }
+        .form-group {
+          margin: 15px 0;
+          height: 55px;
+          input {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .input-group {
+          margin: 15px 0;
+        }
+        .form-checkbox {
+          margin: 15px 0;
+          h6 {
+            margin-bottom: 15px;
+          }
+          .form-check-inline {
+            .form-check-label {
+              margin-right: 30px;
+              font-weight: 500;
+              .form-check-input {
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+        .modal-footer {
+          margin: 20px 0 30px 0;
+          height: 50px;
+          padding: 0 !important;
+          button {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Style NavBar Component To Media Queris.
+@media screen and(max-width: 991px) {
+  .nav {
+    &__bottom {
+      .navbar-brand {
+        width: 50%;
+      }
+      .navbar-collapse {
+        top: 9px;
+        background-color: $white_three;
+        z-index: 1000;
+        // Navbar Form
+        form.form-inline {
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-between;
+          .btn_navbar {
+            max-width: 220px;
+          }
+          .porperty {
+            margin: 20px 0 !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+//Style Header
+.header {
+  //Style Header About
+  &__about {
+    width: 100%;
+    height: 420px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    .overlead {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      background: rgba(167, 26, 40, 0.5);
+    }
+    &__logo {
+      width: 140px;
+      height: 140px;
+      background-color: $white_three;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 3;
+      img {
+        width: 60px;
+        height: 80px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
