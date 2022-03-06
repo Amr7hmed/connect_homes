@@ -78,8 +78,10 @@ $font_poppins: 'Poppins', sans-serif;
     color: inherit;
   }
 //  Import Style Header Component
-@import "./component/header.scss";
+@import "./component/navbar.scss";
 //  Import Style About Us Page
 @import "./component/about.scss";
+//  Import Style Home Page
+@import "./component/home.scss";
 //  Import Style Footer Component
 @import "./component/footer.scss";

@@ -225,6 +225,7 @@ button:focus {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
 }
 .header__about .overlead {
@@ -410,6 +411,7 @@ button:focus {
   width: 431px;
   height: 100%;
   top: 0;
+  background-size: cover;
 }
 .aboutus__property__left {
   left: 0;
@@ -443,6 +445,185 @@ button:focus {
     display: none;
   }
 }
+.header__home {
+  height: 590px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.header__home .overlead {
+  width: 100%;
+  height: 100%;
+  background: rgba(29, 29, 29, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.header__home__detiles {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  width: 900px;
+  height: 400px;
+}
+.header__home__detiles h3 {
+  font-family: "Lato", sans-serif;
+  background-color: #FEFEFE;
+  height: 75px;
+  line-height: 75px;
+  font-size: 49px;
+  text-align: center;
+  color: #00072D;
+  margin-bottom: 20px;
+}
+.header__home__detiles h3:first-of-type {
+  font-weight: bold;
+  width: 536px;
+}
+.header__home__detiles h3:first-of-type span {
+  color: #A71A28;
+}
+.header__home__detiles h3:last-of-type {
+  width: 390px;
+  font-weight: 400px;
+}
+.header__home__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.header__home__list .input__datalist {
+  margin: 0;
+  background-color: #FEFEFE;
+}
+.header__home__list .input__datalist input {
+  background-color: #FEFEFE;
+  height: 80px;
+  width: 220px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #444444;
+  padding: 0 15px;
+  border: none;
+  outline: none;
+}
+.header__home__list .input__datalist input:focus {
+  border: none;
+  outline: none;
+}
+.header__home__list .input__datalist datalist {
+  border: 1px solid #444444;
+}
+.header__home__list button {
+  background-color: #A71A28;
+  color: #FEFEFE;
+  height: 80px;
+  width: 150px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+}
+.header__home__list button:hover {
+  background-color: #A71A28;
+  color: #FEFEFE;
+}
+
+@media screen and (max-width: 762px) {
+  .header__home__detiles {
+    width: 95%;
+    height: 90%;
+  }
+  .header__home__detiles h3 {
+    font-size: 31px;
+  }
+  .header__home__detiles h3:first-of-type {
+    font-weight: bold;
+    width: 360px;
+  }
+  .header__home__detiles h3:first-of-type span {
+    color: #A71A28;
+  }
+  .header__home__detiles h3:last-of-type {
+    width: 280px;
+    font-weight: 400px;
+  }
+  .header__home__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .header__home__list .input__datalist {
+    margin-bottom: 2px;
+  }
+  .header__home__list .input__datalist input {
+    height: 65px;
+    width: 300px;
+  }
+  .header__home__list button {
+    width: 300px;
+  }
+}
+.home__section {
+  margin: 25px 0;
+  padding: 10px 0;
+}
+.home__header {
+  margin: 50px 0 20px 0;
+  text-align: center;
+  height: 30px;
+}
+.home__header h2 {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  margin: 0;
+  height: 100%;
+  text-transform: uppercase;
+}
+.home__header h2::before {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: #A71A28;
+  display: inline-block;
+  margin: 0 15px 10px 0;
+}
+.home__header h2::after {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: #A71A28;
+  display: inline-block;
+  margin: 0 0 10px 15px;
+}
+.home__contener {
+  width: 95%;
+  margin: 0 auto;
+}
+.home .owl-developers {
+  width: 95%;
+}
+.home .owl-developers .owl-item {
+  width: 130px !important;
+  height: 130px !important;
+}
+.home .owl-developers .owl-item img {
+  width: 130px !important;
+  height: 130px !important;
+}
+
 footer {
   min-height: 400px;
   max-height: auto;
