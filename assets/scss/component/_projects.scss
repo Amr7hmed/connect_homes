@@ -1,0 +1,19 @@
+.projects{
+    &__head{
+        margin: 25px 0;
+    }
+    &__contener{
+        width: 95%;
+        margin: 0 auto;
+    }
+    &__form{
+        background: #FFFFFF;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
+        width: 100%;
+        padding: 10px 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

@@ -1017,4 +1017,22 @@ footer {
   color: #FEFEFE;
 }
 
+.projects__head {
+  margin: 25px 0;
+}
+.projects__contener {
+  width: 95%;
+  margin: 0 auto;
+}
+.projects__form {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  width: 100%;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 /*# sourceMappingURL=main.css.map */
