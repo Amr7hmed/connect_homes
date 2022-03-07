@@ -1,0 +1,269 @@
+.project {
+  &__contener {
+    width: 95%;
+    margin: 0 auto;
+  }
+  &__header {
+    margin: 25px 0;
+    height: 650px;
+    .img {
+      .carousel-item {
+        height: 600px;
+        width: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .carousel-control-prev,
+      .carousel-control-next {
+        background: rgba(53, 0, 5, 0.3);
+        width: 60px;
+      }
+    }
+    .detiles {
+      height: 600px;
+      padding-left: 30px;
+      text-transform: uppercase;
+      width: 90%;
+      h3 {
+        font-family: $font_lato;
+        font-style: normal;
+        font-weight: 600;
+        font-size: $font_31;
+        margin: 20px 0;
+        color: #000000;
+      }
+      p {
+        font-style: normal;
+        font-weight: 600;
+        font-size: $font_25;
+        color: #979797;
+        margin: 20px 0;
+        font-family: $font_lato;
+      }
+      ul {
+        li {
+          font-family: $font_lato;
+          margin: 25px 0;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          span {
+            &:first-of-type {
+              font-style: normal;
+              font-weight: normal;
+              font-size: $font_20;
+              text-transform: uppercase;
+              color: #514848;
+            }
+            &:last-of-type {
+              font-style: normal;
+              font-weight: 600;
+              font-size: $font_25;
+              color: #0d0d0d;
+            }
+          }
+        }
+      }
+      button {
+        width: 303px;
+        height: 64px;
+        border: 4px solid $red;
+        box-sizing: border-box;
+        font-style: normal;
+        font-weight: bold;
+        font-size: $font_20;
+        color: $red;
+      }
+    }
+  }
+  &__about {
+    margin: 40px 0;
+    padding: 10px 0;
+    &__head {
+      font-family: $font_lato;
+      font-style: normal;
+      font-weight: normal;
+      font-size: $font_31;
+      color: #000000;
+      margin: 25px 0;
+      text-transform: uppercase;
+      h2 {
+        position: relative;
+        &::after {
+          content: "";
+          width: 281px;
+          height: 2px;
+          background-color: $red;
+          display: inline-block;
+          margin: 0 0 10px 15px;
+        }
+      }
+    }
+    &__body {
+      margin: 25px 0;
+      display: flex;
+      flex-direction: row;
+      font-family: $font_lato;
+      .logo {
+        width: 110px;
+        img {
+          width: 95px;
+          height: 80px;
+          margin-right: 10px;
+        }
+      }
+      .detiles {
+        width: 957px;
+        h4 {
+          font-style: normal;
+          font-weight: bold;
+          font-size: $font_25;
+          color: #000000;
+        }
+        p {
+          font-weight: normal;
+          font-size: $font_20;
+          color: #000000;
+        }
+      }
+    }
+  }
+  &__facilities {
+    margin: 40px 0;
+    padding: 10px 0;
+    &__head {
+      font-family: $font_lato;
+      font-style: normal;
+      font-weight: normal;
+      font-size: $font_31;
+      color: #000000;
+      margin: 25px 0 35px 0;
+      text-transform: uppercase;
+      h2 {
+        position: relative;
+        &::after {
+          content: "";
+          width: 125px;
+          height: 2px;
+          background-color: $red;
+          display: inline-block;
+          margin: 0 0 10px 15px;
+        }
+      }
+    }
+    .project__facilitie {
+      font-family: $font_lato;
+      margin-bottom: 30px;
+      span {
+        font-style: normal;
+        font-weight: normal;
+        font-size: $font_20;
+        text-transform: uppercase;
+        color: #112211;
+        &:last-of-type {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+
+  &__properties {
+    margin: 40px 0;
+    padding: 10px 0;
+    &__head {
+      font-family: $font_lato;
+      font-style: normal;
+      font-weight: normal;
+      font-size: $font_31;
+      color: #000000;
+      margin: 25px 0 35px 0;
+      text-transform: uppercase;
+      h2 {
+        position: relative;
+        &::after {
+          content: "";
+          width: 125px;
+          height: 2px;
+          background-color: $red;
+          display: inline-block;
+          margin: 0 0 10px 15px;
+        }
+      }
+    }
+    &__body {
+      .project__propertie {
+        margin-bottom: 30px;
+        h4 {
+          font-family: $font_lato;
+          font-style: normal;
+          font-weight: bold;
+          font-size: $font_20;
+          line-height: 120%;
+          text-transform: uppercase;
+          color: #00072d;
+          span {
+            width: 230px;
+            height: 1px;
+            border-bottom: 3px solid #00072d;
+            display: inline-block;
+            margin: 0px 0px 8px 25px;
+          }
+          margin-bottom: 20px;
+        }
+        ul {
+          li {
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            span {
+              &:first-of-type {
+                font-family: $font_lato;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                color: #514848;
+              }
+              &:last-of-type {
+                font-family: $font_lato;
+                font-style: normal;
+                font-weight: bold;
+                font-size: $font_20;
+                color: #000000;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__loction {
+    margin: 40px 0;
+    padding: 10px 0;
+    &__head {
+      font-family: $font_lato;
+      font-style: normal;
+      font-weight: normal;
+      margin: 25px 0 35px 0;
+      h2 {
+        text-transform: uppercase;
+        font-family: $font_lato;
+        font-style: normal;
+        font-weight: 600;
+        font-size: $font_25;
+        color: #000000;
+        span {
+          width: 125px;
+          height: 1px;
+          border-bottom: 3px solid $red;
+          background-color: $red;
+          display: inline-block;
+          margin: 0 0 10px 15px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Connect Homes</title>
+  <!-- Vendor Css File -->
+  <link rel="stylesheet" href="../css/vendor/normalize.css" />
+  <link rel="stylesheet" href="../css/vendor/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/vendor/all.min.css" />
+  <link rel="stylesheet" href="../css/vendor/fontawesome.min.css" />
+  <script src="../js/vendor/bootstrap.bundle.min.js"></script>
+  <!-- Style Genral Css File -->
+  <link rel="stylesheet" href="../css/main.css" />
+</head>
+
+<body>
+  <!--NavBar Component-->
+  <nav class="nav">
+    <section class="nav__top">
+      <div class="nav__contener">
+        <ul>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+          </li>
+          <li>CALL US</li>
+          <li>010-2345-6789</li>
+          <li>العربية</li>
+        </ul>
+      </div>
+    </section>
+    <section class="nav__bottom">
+      <div class="nav__contener">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand col-lg-2 col-xl-5" href="#">
+            <img src="../image/logo/imag.png" alt="Logo" />
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse col-lg-10 col-xl-7" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../../index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">PROJECTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PROPERTIES</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <button class="btn btn_navbar porperty" type="button">
+                LIST YOUR PORPERTY
+              </button>
+              <button type="button" class="btn btn_navbar register" data-toggle="modal" data-target="#exampleModal"
+                data-whatever="@mdo">
+                REGISTER NOW
+              </button>
+              <!-- Modal Register -->
+              <div class="modal fade modal__register" id="exampleModal" tabindex="-1"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <h5 class="modal-title">REGISTER INTEREST</h5>
+                      <form>
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="FULL NAME" />
+                        </div>
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="EMAIL ADDRESS" />
+                        </div>
+
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                              data-toggle="dropdown" aria-expanded="false">
+                              +20
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">+044</a>
+                              <a class="dropdown-item" href="#">+656</a>
+                              <a class="dropdown-item" href="#">+709</a>
+                            </div>
+                          </div>
+                          <input type="text" class="form-control" aria-label="Text input with dropdown button"
+                            placeholder="PHONE NUMBER" />
+                        </div>
+                        <div class="form-checkbox">
+                          <h6>I am interested in</h6>
+                          <div class="form-check-inline">
+                            <label class="form-check-label" for="inlineCheckbox1">
+                              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="buy" />
+                              BUY
+                            </label>
+
+                            <label class="form-check-label" for="inlineCheckbox2">
+                              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="rent" />
+                              RENT
+                            </label>
+
+                            <label class="form-check-label" for="inlineCheckbox2">
+                              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="sell" />
+                              SELL
+                            </label>
+                          </div>
+                        </div>
+
+                        <div class="modal-footer">
+                          <button type="button" class="btn register">
+                            REGISTER
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </section>
+  </nav>
+
+
+  <section class="project__header">
+    <div class="project__contener">
+      <div class="row">
+        <div class="col-md-12 col-lg-6">
+          <div class="img">
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../image/projects/image.jpg" class="d-block w-100" alt="Item One">
+                </div>
+                <div class="carousel-item">
+                  <img src="../image/projects/image.jpg" class="d-block w-100" alt="Item One">
+                </div>
+                <div class="carousel-item">
+                  <img src="../image/projects/image.jpg" class="d-block w-100" alt="Item One">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators"
+                data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators"
+                data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </button>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-6">
+          <div class="detiles">
+            <h3>VINCI - DIPLOMATIC AREA</h3>
+            <p>MISR ITALIA</p>
+            <ul>
+              <li>
+                <span>Location</span>
+                <span>NEW CAPITAL</span>
+              </li>
+              <li>
+                <span>Starts from</span>
+                <span>EGP 900,000</span>
+              </li>
+              <li>
+                <span>Down Payment</span>
+                <span>10%</span>
+              </li>
+              <li>
+                <span>Installment Period</span>
+                <span>8 YEARS</span>
+              </li>
+              <li>
+                <span>Delivery date</span>
+                <span>2023</span>
+              </li>
+            </ul>
+            <button class="btn">
+              REGISTER INTEREST
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="project__about">
+    <div class="project__contener">
+      <div class="project__about__head">
+        <h2>ABOUT PROJECT</h2>
+      </div>
+      <div class="project__about__body">
+        <div class="logo">
+          <img src="../image/projects/vinci-logo.jpg" alt="">
+        </div>
+        <div class="detiles">
+          <h4>VINCI</h4>
+          <p>
+            Omnis non eius delectus doloribus ipsa qui est id. Ratione ipsa earum.
+            Aspernatur laudantium nihil ducimus voluptate unde sunt expedita.
+            Quam soluta temporibus. Distinctio eligendi voluptas quo. Sed eaque nemo molestiae et.
+          </p>
+          <p>
+            Omnis non eius delectus doloribus ipsa qui est id. Ratione ipsa earum.
+            Aspernatur laudantium nihil ducimus voluptate unde sunt expedita.
+            Quam soluta temporibus. Distinctio eligendi voluptas quo. Sed eaque nemo molestiae et.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="project__facilities">
+    <div class="project__contener">
+      <div class="project__facilities__head">
+        <h2>FACILITIES</h2>
+      </div>
+      <div class="project__facilities__body">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4 project__facilitie">
+            <span>
+              <i class="fa-solid fa-graduation-cap"></i>
+            </span>
+            <span>
+              Educational Facilities
+            </span>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 project__facilitie">
+            <span>
+              <i class="fa-solid fa-tree"></i>
+            </span>
+            <span>
+              Family Park
+            </span>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 project__facilitie">
+            <span>
+              <i class="fa-solid fa-person-swimming"></i>
+            </span>
+            <span>
+              Swimming Pool
+            </span>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 project__facilitie">
+            <span><i class="fa-solid fa-shop"></i></span>
+            <span></span><span>Shopping Stores
+            </span>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 project__facilitie">
+            <span><i class="fa-solid fa-business-time"></i></span><span>Commercial Area</span>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 project__facilitie">
+            <span><i class="fa-solid fa-user-shield"></i></span>
+            <span>Security Services</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="project__properties">
+    <div class="project__contener">
+      <div class="project__facilities__head">
+        <h2>PROPERTIES</h2>
+      </div>
+      <div class="project__properties__body">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="project__propertie">
+              <h4>
+                villas
+                <span></span>
+              </h4>
+              <ul>
+                <li>
+                  <span>Start Price</span>
+                  <span>EGP 1,300,000</span>
+                </li>
+                <li>
+                  <span>Area</span>
+                  <span>150 - 200 sqm</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="project__propertie">
+              <h4>Apartments
+                <span></span>
+              </h4>
+              <ul>
+                <li>
+                  <span>Start Price</span>
+                  <span>EGP 1,300,000</span>
+                </li>
+                <li>
+                  <span>Area</span>
+                  <span>150 - 200 sqm</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="project__propertie">
+              <h4>Twin Villa
+                <span></span>
+              </h4>
+              <ul>
+                <li>
+                  <span>Start Price</span>
+                  <span>EGP 1,300,000</span>
+                </li>
+                <li>
+                  <span>Area</span>
+                  <span>150 - 200 sqm</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="project__propertie">
+              <h4>Town House
+                <span></span>
+              </h4>
+              <ul>
+                <li>
+                  <span>Start Price</span>
+                  <span>EGP 1,300,000</span>
+                </li>
+                <li>
+                  <span>Area</span>
+                  <span>150 - 200 sqm</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="project__propertie">
+              <h4>Town House
+                <span></span>
+              </h4>
+              <ul>
+                <li>
+                  <span>Start Price</span>
+                  <span>EGP 1,300,000</span>
+                </li>
+                <li>
+                  <span>Area</span>
+                  <span>150 - 200 sqm</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="project__propertie">
+              <h4>Town House
+                <span></span>
+              </h4>
+              <ul>
+                <li>
+                  <span>Start Price</span>
+                  <span>EGP 1,300,000</span>
+                </li>
+                <li>
+                  <span>Area</span>
+                  <span>150 - 200 sqm</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="project__loction">
+    <div class="project__contener">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="project__loction__head">
+            <h2>
+              LOCATION
+              <span></span>
+            </h2>
+          </div>
+
+          <div class="project__loction__map">
+            <div class="mapouter">
+              <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+                  src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                  href="https://www.whatismyip-address.com"></a><br>
+                <style>
+                  .mapouter {
+                    position: relative;
+                    text-align: right;
+                    height: 500px;
+                    width: 600px;
+                  }
+                </style><a href="https://www.embedgooglemap.net">google maps create map</a>
+                <style>
+                  .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    height: 500px;
+                    width: 600px;
+                  }
+                </style>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="project__loction__head">
+            <h2>
+              MASTERPLAN
+              <span></span>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!--Footer Component-->
+  <footer>
+    <section class="footer__contener">
+
+      <h3>CONNECT HOMES</h3>
+      <div class="footer__connect">
+        <div class="row">
+          <div class="col-md-12 col-lg-7">
+            <div class="row">
+
+              <div class="col-12 col-sm-4 col-lg-4">
+                <div class="footer__connect__item">
+                  <h5>SITEMAP</h5>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        HOME
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        ABOUT US
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        CONTACT US
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        CAREERS
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-4 col-lg-4">
+                <div class="footer__connect__item">
+                  <h5>DEVELOPERS</h5>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        ZED
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        EMAAR
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        HYDE PARK
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        EVORA
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-4 col-lg-4">
+                <div class="footer__connect__item">
+                  <h5>DEVELOPERS</h5>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        ZED
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        EMAAR
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        HYDE PARK
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-12 col-lg-5">
+            <div class="footer__connect__item">
+              <h5>NEWSLETTER</h5>
+              <p>SUBSCRIBE TO RECIEVE LATEST UPDATES AND NEWS.</p>
+
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="EMAIL ADDRESS" />
+                <button class="btn">SUBSCRIBE
+                </button>
+              </div>
+
+              <div class="footer__socialmedia">
+                <span><a href="#">
+                    <i class="fa-brands fa-facebook-square"></i></span>
+                </a>
+                <span><a href="#">
+                    <i class="fa-brands fa-linkedin"></i></span>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__copyrights">
+        <span>Copyrights reserved 2022 ©</span>
+
+      </div>
+    </section>
+  </footer>
+  <!-- Vendor Js File -->
+  <script src="../js/vendor/jquery.slim.min.js"></script>
+  <script src="../js/vendor/popper.min.js"></script>
+  <script src="../js/vendor/bootstrap.min.js"></script>
+  <script src="../js/vendor/all.min.js"></script>
+  <!-- Script Genral Js File -->
+  <script src="../js/script.js"></script>
+</body>
+
+</html>
