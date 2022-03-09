@@ -57,3 +57,64 @@ $(".NextBtnproject").click(function () {
 $(".PreviousBtnproject").click(function () {
     owlproject.trigger("prev.owl.carousel");
 });
+
+
+
+var project__similarp = $(".project__similarpr");
+project__similarp.owlCarousel({
+  loop: false,
+  margin: 10,
+  nav: false,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 1,
+    },
+    960: {
+      items: 3,
+    },
+    1200: {
+      items: 3.5,
+    },
+  },
+});
+
+// Custom Button
+$(".Nextsimilarprojects").click(function () {
+  project__similarp.trigger("next.owl.carousel");
+});
+$(".Previoussimilarprojects").click(function () {
+  project__similarp.trigger("prev.owl.carousel");
+});
+
+
+var property__similarpr = $(".property__similarpr");
+property__similarpr.owlCarousel({
+  loop: false,
+  margin: 10,
+  nav: false,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 1,
+    },
+    960: {
+      items: 1.5,
+    },
+    1200: {
+      items: 3.5,
+    },
+  },
+});
+
+// Custom Button
+$(".Nextsimilarprojects").click(function () {
+  property__similarpr.trigger("next.owl.carousel");
+});
+$(".Previoussimilarprojects").click(function () {
+  property__similarpr.trigger("prev.owl.carousel");
+});
