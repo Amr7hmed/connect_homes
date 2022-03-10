@@ -137,6 +137,7 @@ button:focus {
   line-height: 17px;
   font-family: "Lato", sans-serif;
   font-style: normal;
+  width: auto;
 }
 .nav__bottom .nav__contener nav.navbar form.form-inline .porperty {
   background-color: transparent;
@@ -148,77 +149,81 @@ button:focus {
   background-color: #A71A28 !important;
   color: #F9ECEC;
 }
-.nav .modal__register .modal-dialog {
+
+.modal__register .modal-dialog {
   height: 90%;
 }
-.nav .modal__register .modal-dialog .modal-content {
+.modal__register .modal-dialog .modal-content {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.nav .modal__register .modal-header {
+.modal__register .modal-header {
   border: none;
 }
-.nav .modal__register .modal-body {
+.modal__register .modal-body {
   padding: 0 2rem;
 }
-.nav .modal__register .modal-body h5 {
+.modal__register .modal-body h5 {
   margin: 15px 0;
 }
-.nav .modal__register .modal-body .form-group {
+.modal__register .modal-body .form-group {
   margin: 15px 0;
   height: 55px;
 }
-.nav .modal__register .modal-body .form-group input {
+.modal__register .modal-body .form-group input {
   width: 100%;
   height: 100%;
 }
-.nav .modal__register .modal-body .input-group {
+.modal__register .modal-body .input-group {
   margin: 15px 0;
 }
-.nav .modal__register .modal-body .form-checkbox {
+.modal__register .modal-body .form-checkbox {
   margin: 15px 0;
 }
-.nav .modal__register .modal-body .form-checkbox h6 {
+.modal__register .modal-body .form-checkbox h6 {
   margin-bottom: 15px;
 }
-.nav .modal__register .modal-body .form-checkbox .form-check-inline .form-check-label {
+.modal__register .modal-body .form-checkbox .form-check-inline .form-check-label {
   margin-right: 30px;
   font-weight: 500;
 }
-.nav .modal__register .modal-body .form-checkbox .form-check-inline .form-check-label .form-check-input {
+.modal__register .modal-body .form-checkbox .form-check-inline .form-check-label .form-check-input {
   margin-right: 10px;
 }
-.nav .modal__register .modal-body .modal-footer {
+.modal__register .modal-body .modal-footer {
   margin: 20px 0 30px 0;
   height: 50px;
   padding: 0 !important;
 }
-.nav .modal__register .modal-body .modal-footer button {
+.modal__register .modal-body .modal-footer button {
   width: 100%;
   height: 100%;
+  background-color: #A71A28;
+  color: #FEFEFE;
 }
-.nav .modal__porperty .modal-dialog {
+.modal__porperty .modal-dialog {
   height: 90%;
 }
-.nav .modal__porperty .modal-dialog .modal-content {
+.modal__porperty .modal-dialog .modal-content {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 655px;
-  height: 471px;
+  min-height: 500px;
+  max-height: auto;
   background: #ffffff;
   border: 1px solid #d4d4d4;
   box-sizing: border-box;
 }
-.nav .modal__porperty .modal-header {
+.modal__porperty .modal-header {
   border: none;
   padding: 0.5rem 1rem;
 }
-.nav .modal__porperty .modal-body {
+.modal__porperty .modal-body {
   padding: 0 2rem;
 }
-.nav .modal__porperty .modal-body h5 {
+.modal__porperty .modal-body h5 {
   padding: 5px 0;
   font-family: "Lato", sans-serif;
   font-style: normal;
@@ -232,13 +237,13 @@ button:focus {
   font-weight: 600;
   justify-content: space-between;
 }
-.nav .modal__porperty .modal-body h5 span:first-of-type {
+.modal__porperty .modal-body h5 span:first-of-type {
   font-size: 25px;
 }
-.nav .modal__porperty .modal-body h5 span:last-of-type {
+.modal__porperty .modal-body h5 span:last-of-type {
   font-size: 16px;
 }
-.nav .modal__porperty .modal-body h5::after {
+.modal__porperty .modal-body h5::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -247,13 +252,102 @@ button:focus {
   height: 3px;
   background-color: #A71A28;
 }
-.nav .modal__porperty .modal-body .form-group {
+.modal__porperty .modal-body .form-group {
   margin: 15px 0;
   height: 55px;
 }
-.nav .modal__porperty .modal-body .form-group input {
+.modal__porperty .modal-body .form-group input {
   width: 100%;
   height: 100%;
+}
+.modal__porperty__one {
+  display: none;
+}
+.modal__porperty__two {
+  display: none;
+}
+.modal__porperty__three {
+  display: none;
+}
+.modal__porperty__item {
+  margin: 10px 0;
+}
+.modal__porperty__item label {
+  display: inline-block;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #000000;
+  margin: 0 4px;
+}
+.modal__porperty__item label span {
+  color: #A71A28;
+  font-weight: 600;
+  font-size: 20px;
+}
+.modal__porperty__item input {
+  height: 45px;
+  border: 1px solid #d4d4d4;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+.modal__porperty__item input:focus {
+  outline: none;
+  border: 1px solid #d4d4d4;
+}
+.modal__porperty__item .input__datalist input {
+  width: 100%;
+}
+.modal__porperty__item .input-group {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.modal__porperty__item .input-group .input-group-prepend,
+.modal__porperty__item .input-group .input-group-append {
+  width: 55px;
+  height: 45px;
+}
+.modal__porperty__item .input-group .input-group-prepend span,
+.modal__porperty__item .input-group .input-group-append span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 45px;
+  text-align: center;
+  padding: 0;
+  top: 14px;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #363636;
+}
+.modal__porperty__item .input-group input {
+  width: calc(100% - 55px);
+}
+.modal__porperty__button button {
+  font-family: "Lato", sans-serif;
+  width: 100%;
+  height: 43px;
+  border: 1px solid #d4d4d4;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+}
+.modal__porperty__button button:focus {
+  outline: none;
+  border: 1px solid #d4d4d4;
+}
+.modal__porperty__button .nextmodel,
+.modal__porperty__button .submitmodel {
+  background: #A71A28;
+  color: #FEFEFE;
+}
+.modal__porperty__button .submitmodel {
+  display: none;
 }
 
 @media screen and (max-width: 991px) {
@@ -263,7 +357,7 @@ button:focus {
   .nav__bottom .navbar-collapse {
     top: 9px;
     background-color: #FEFEFE;
-    z-index: 1000;
+    z-index: 10;
   }
   .nav__bottom .navbar-collapse form.form-inline {
     flex-direction: column;
@@ -275,6 +369,10 @@ button:focus {
   }
   .nav__bottom .navbar-collapse form.form-inline .porperty {
     margin: 20px 0 !important;
+  }
+
+  .modal-backdrop {
+    z-index: 5;
   }
 }
 .header__about {

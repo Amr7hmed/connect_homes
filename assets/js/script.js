@@ -118,3 +118,56 @@ $(".Nextsimilarprojects").click(function () {
 $(".Previoussimilarprojects").click(function () {
   property__similarpr.trigger("prev.owl.carousel");
 });
+
+
+// modal porperty form
+
+const modalporpertyform = document.querySelectorAll(".modal__porperty__form"),
+      modalporpertynext = document.getElementById("modal__porperty__next"),
+      modalporpertyback = document.getElementById("modal__porperty__back"),
+      modalporpertysubmit = document.getElementById("modal__porperty__submit");
+  let numbershow = 0;
+
+function showmodel(numbershow){
+  modalporpertyform[numbershow].style.display ="block";
+  modalporpertyback.style.display ="none";
+  modalporpertynext.style.display="block";
+  modalporpertysubmit.style.display="none";
+}
+
+showmodel(numbershow)
+console.log(modalporpertyform.length);
+
+modalporpertynext.addEventListener("click", function(e){
+  e.preventDefault();
+  modalporpertyform.forEach(item =>{
+    item.style.display="none";
+  })
+  numbershow++;
+  if(numbershow >= modalporpertyform.length){
+    showmodel(modalporpertyform.length-1)
+    modalporpertyback.style.display ="block";
+    modalporpertysubmit.style.display="block";
+    modalporpertynext.style.display="none";
+    console.log("no next")
+  }else{
+    showmodel(numbershow)
+    modalporpertyback.style.display ="block";
+  }
+})
+
+modalporpertyback.addEventListener("click",function(e){
+  modalporpertyform.forEach(item =>{
+    item.style.display="none";
+  })
+  e.preventDefault();
+  numbershow--;
+  if(numbershow <= 0){
+    showmodel(0)
+    modalporpertyback.style.display ="none";
+  }else{
+    showmodel(numbershow)
+    modalporpertyback.style.display ="block";
+  }
+
+})
