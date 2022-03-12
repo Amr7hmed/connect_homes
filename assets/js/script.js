@@ -144,12 +144,11 @@ modalporpertynext.addEventListener("click", function(e){
     item.style.display="none";
   })
   numbershow++;
-  if(numbershow >= modalporpertyform.length){
+  if(numbershow >= modalporpertyform.length-1){
     showmodel(modalporpertyform.length-1)
+    modalporpertynext.style.display="none";
     modalporpertyback.style.display ="block";
     modalporpertysubmit.style.display="block";
-    modalporpertynext.style.display="none";
-    console.log("no next")
   }else{
     showmodel(numbershow)
     modalporpertyback.style.display ="block";
@@ -169,5 +168,5 @@ modalporpertyback.addEventListener("click",function(e){
     showmodel(numbershow)
     modalporpertyback.style.display ="block";
   }
-
 })
+
