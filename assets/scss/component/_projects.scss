@@ -23,7 +23,7 @@
       overflow: hidden;
       position: relative;
       font-weight: normal;
-      font-size: 16px;
+      font-size: $font_16;
       span {
         position: absolute;
         display: inline-block;
@@ -40,7 +40,7 @@
       }
       input {
         float: left;
-        width: 330px;
+        width: calc(450px - 120px);
         height: 48px;
         background: #ffffff;
         border: 1px solid #d4d4d4;
@@ -64,7 +64,7 @@
       }
     }
     .input__type {
-      width: 210px;
+      width: 260px;
       height: 48px;
       background: #ffffff;
       border: 1px solid #d4d4d4;
@@ -83,7 +83,7 @@
       }
     }
     .input__project {
-      width: 210px;
+      width: 260px;
       height: 48px;
       background: #ffffff;
       border: 1px solid #d4d4d4;
@@ -102,7 +102,7 @@
       }
     }
     .input__developers {
-      width: 230px;
+      width: 260px;
       height: 48px;
       background: #ffffff;
       border: 1px solid #d4d4d4;
@@ -121,7 +121,7 @@
       }
     }
     .input__price {
-      width: 200px;
+      width: 260px;
       height: 48px;
       background: #ffffff;
       border: 1px solid #d4d4d4;
@@ -140,7 +140,7 @@
       }
     }
     .input__more {
-      width: 180px;
+      width: 220px;
       height: 48px;
       background: #ffffff;
       border: 1px solid #d4d4d4;
@@ -178,7 +178,7 @@
           color: $dark_blue;
           font-style: normal;
           font-weight: 600;
-          font-size: 16px;
+          font-size: $font_16;
         }
       }
     }
@@ -408,3 +408,107 @@
 }
 
         
+
+// 5-1-Style Projects && Properties Page To Media Queries In The Max Width ("1831px").
+@media screen and(max-width: 1831px) {
+ // Style Projects Page
+.projects {
+  &__form {
+    padding: 10px;
+    .input__search {
+      width: 350px;
+      height: 48px;
+      overflow: hidden;
+      position: relative;
+      font-weight: normal;
+      font-size: $font_16;
+      input {
+        width: calc(350px - 80px);
+      }
+      button {
+        float: left;
+        width: 80px;
+        font-weight: 500;
+      }
+    }
+    .input__type {
+      width: 200px;
+    }
+    .input__project {
+      width: 200px;
+    }
+    .input__developers {
+      width: 200px;
+    }
+    .input__price {
+      width: 200px;
+    }
+    .input__more {
+      width: 180px;
+    }
+  }
+
+}
+}
+
+// 5-1-Style Projects && Properties Page To Media Queries In The Max Width ("1421px").
+@media screen and(max-width: 1421px) {
+  // Style Projects Page
+  .projects {
+    &__form {
+      padding: 10px 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .input__search {
+        margin: 5px 0;
+      }
+      .input__type {
+        margin: 5px 0;
+      }
+      .input__project {
+        margin: 5px 0;
+      }
+      .input__developers {
+        margin: 5px 0;
+      }
+      .input__price {
+        margin: 5px 0;
+      }
+      .input__more {
+        margin: 5px 0;
+      }
+    }
+  }
+ }
+ 
+// 5-3-Style Projects && Properties Page To Media Queries In The Max Width ("991px").
+@media screen and(max-width: 991px) {
+  .projects {
+    &__form {
+      padding: 10px 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .input__search {
+        margin: 5px 0;
+      }
+      .input__type {
+        margin: 5px 0;
+      }
+      .input__project {
+        margin: 5px 0;
+      }
+      .input__developers {
+        margin: 5px 0;
+      }
+      .input__price {
+        margin: 5px 0;
+      }
+      .input__more {
+        margin: 5px 0;
+      }
+    }
+  }
+  
+}

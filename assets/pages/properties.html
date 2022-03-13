@@ -9,9 +9,9 @@
   <!-- Vendor Css File -->
   <link rel="stylesheet" href="../css/vendor/normalize.css" />
   <link rel="stylesheet" href="../css/vendor/bootstrap.min.css" />
-  <link rel="stylesheet" href="../css/vendor/all.min.css" />
   <link rel="stylesheet" href="../css/vendor/fontawesome.min.css" />
-  <script src="../js/vendor/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="../css/vendor/owl.carousel.min.css" />
+  <link rel="stylesheet" href="../css/vendor/owl.theme.default.min.css" />
   <!-- Style Genral Css File -->
   <link rel="stylesheet" href="../css/main.css" />
 </head>
@@ -19,6 +19,7 @@
 <body>
   <!--NavBar Component-->
   <nav class="nav">
+    <!--NavBar Top Component-->
     <section class="nav__top">
       <div class="nav__contener">
         <ul>
@@ -31,10 +32,11 @@
         </ul>
       </div>
     </section>
+    <!--NavBar Bottom Component-->
     <section class="nav__bottom">
       <div class="nav__contener">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand col-lg-2 col-xl-5" href="#">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#">
             <img src="../image/logo/imag.png" alt="Logo" />
           </a>
 
@@ -43,8 +45,8 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse col-lg-10 col-xl-7" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link" href="../../index.html">HOME</a>
               </li>
@@ -54,284 +56,286 @@
               <li class="nav-item">
                 <a class="nav-link" href="projects.html">PROJECTS</a>
               </li>
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="properties.html">PROPERTIES</a>
               </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <button type="button" class="btn btn_navbar porperty" data-toggle="modal" data-target="#porpertyModal"
-                data-whatever="@mdo">
-                LIST YOUR PORPERTY
-              </button>
-              <button type="button" class="btn btn_navbar register" data-toggle="modal" data-target="#exampleModal"
-                data-whatever="@mdo">
-                REGISTER NOW
-              </button>
-              
-              <!-- Modal Register -->
-              <div class="modal fade modal__porperty" id="porpertyModal" tabindex="-1"
-                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <h5 class="modal-title">
-                        <span>Unit Details</span>
-                        <span class="number">1/3</span>
-                      </h5>
-                      <form>
-                        <div class="modal__porperty__form modal__porperty__one">
-                          <div class="row">
-                            <div class="col-6 modal__porperty__item">
-                              <label>Project <span>*</span></label>
-                              <div class="input__datalist">
-                                <input list="chooseproject" name="chooseproje" id="chooseproje"
-                                  placeholder="Choose Project">
-                                <datalist id="chooseproject">
-                                  <option value="test one">
-                                  <option value="test two">
-                                  <option value="test three">
-                                </datalist>
+              <form class="form-inline">
+                <button type="button" class="btn btn_navbar porperty" data-toggle="modal" data-target="#porpertyModal"
+                  data-whatever="@mdo">
+                  LIST YOUR PORPERTY
+                </button>
+                <button type="button" class="btn btn_navbar register" data-toggle="modal" data-target="#exampleModal"
+                  data-whatever="@mdo">
+                  REGISTER NOW
+                </button>
+                
+                <!-- Modal Porperty -->
+                <div class="modal fade modal__porperty" id="porpertyModal" tabindex="-1"
+                  aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <h5 class="modal-title">
+                          <span>Unit Details</span>
+                          <span class="number"></span>
+                        </h5>
+                        <form>
+                          <div class="modal__porperty__form modal__porperty__one">
+                            <div class="row">
+                              <div class="col-6 modal__porperty__item">
+                                <label>Project <span>*</span></label>
+                                <div class="input__datalist">
+                                  <input list="chooseproject" name="chooseproje" id="chooseproje"
+                                    placeholder="Choose Project">
+                                  <datalist id="chooseproject">
+                                    <option value="test one">
+                                    <option value="test two">
+                                    <option value="test three">
+                                  </datalist>
+                                </div>
                               </div>
-                            </div>
-                            <div class="col-6 modal__porperty__item">
-                              <label>Developer <span>*</span></label>
-                              <div class="input__datalist">
-                                <input list="choosedeveloper" name="choosedevelop" id="choosedevelop"
-                                  placeholder="Choose Developer">
-                                <datalist id="choosedeveloper">
-                                  <option value="test one">
-                                  <option value="test two">
-                                  <option value="test three">
-                                </datalist>
+                              <div class="col-6 modal__porperty__item">
+                                <label>Developer <span>*</span></label>
+                                <div class="input__datalist">
+                                  <input list="choosedeveloper" name="choosedevelop" id="choosedevelop"
+                                    placeholder="Choose Developer">
+                                  <datalist id="choosedeveloper">
+                                    <option value="test one">
+                                    <option value="test two">
+                                    <option value="test three">
+                                  </datalist>
+                                </div>
                               </div>
-                            </div>
-                            <div class="col-6 modal__porperty__item">
-                              <label>Location <span>*</span></label>
-                              <div class="input__datalist">
-                                <input list="chooselocation" name="chooselocat" id="chooselocat"
-                                  placeholder="Choose Location">
-                                <datalist id="chooselocation">
-                                  <option value="test one">
-                                  <option value="test two">
-                                  <option value="test three">
-                                </datalist>
+                              <div class="col-6 modal__porperty__item">
+                                <label>Location <span>*</span></label>
+                                <div class="input__datalist">
+                                  <input list="chooselocation" name="chooselocat" id="chooselocat"
+                                    placeholder="Choose Location">
+                                  <datalist id="chooselocation">
+                                    <option value="test one">
+                                    <option value="test two">
+                                    <option value="test three">
+                                  </datalist>
+                                </div>
                               </div>
-                            </div>
-                            <div class="col-6 modal__porperty__item">
-                              <label>Unit Type <span>*</span></label>
-                              <div class="input__datalist">
-                                <input list="unittype" name="selectunittype" id="selectunittype"
-                                  placeholder="Select Unit Type">
-                                <datalist id="unittype">
-                                  <option value="test one">
-                                  <option value="test two">
-                                  <option value="test three">
-                                </datalist>
+                              <div class="col-6 modal__porperty__item">
+                                <label>Unit Type <span>*</span></label>
+                                <div class="input__datalist">
+                                  <input list="unittype" name="selectunittype" id="selectunittype"
+                                    placeholder="Select Unit Type">
+                                  <datalist id="unittype">
+                                    <option value="test one">
+                                    <option value="test two">
+                                    <option value="test three">
+                                  </datalist>
+                                </div>
                               </div>
-                            </div>
-                            <div class="col-6 modal__porperty__item">
-                              <label>Unit Number <span>*</span></label>
-                              <div class="input__datalist">
-                                <input list="unitnumber" name="typeunitnumber" id="typeunitnumber"
-                                  placeholder="Type Unit Number">
-                                <datalist id="unitnumber">
-                                  <option value="test one">
-                                  <option value="test two">
-                                  <option value="test three">
-                                </datalist>
+                              <div class="col-6 modal__porperty__item">
+                                <label>Unit Number <span>*</span></label>
+                                <div class="input__datalist">
+                                  <input list="unitnumber" name="typeunitnumber" id="typeunitnumber"
+                                    placeholder="Type Unit Number">
+                                  <datalist id="unitnumber">
+                                    <option value="test one">
+                                    <option value="test two">
+                                    <option value="test three">
+                                  </datalist>
+                                </div>
                               </div>
-                            </div>
-                            <div class="col-6 modal__porperty__item">
-                              <label>Listing Type <span>*</span></label>
-                              <div class="input__datalist">
-                                <input list="listingtype" name="listingt" id="listingt" placeholder="For Sale / Rent">
-                                <datalist id="listingtype">
-                                  <option value="test one">
-                                  <option value="test two">
-                                  <option value="test three">
-                                </datalist>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="modal__porperty__form modal__porperty__two">
-                          <div class="row">
-                            <div class="col-6 modal__porperty__item">
-                              <label>Finishing <span>*</span></label>
-                              <div class="input__datalist">
-                                <input list="choosefinishing" name="choosefinish" id="choosefinish"
-                                  placeholder="Choose Finishing">
-                                <datalist id="choosefinishing">
-                                  <option value="test one">
-                                  <option value="test two">
-                                  <option value="test three">
-                                </datalist>
-                              </div>
-                            </div>
-                            <div class="col-6 modal__porperty__item">
-                              <label>Delivery Date <span>*</span></label>
-                              <div class="input__datalist">
-                                <input list="chooseyear" class="form-control" name="choosedate" id="choosedate"
-                                  placeholder="Choose Year">
-                                <datalist id="chooseyear">
-                                  <option value="test one">
-                                  <option value="test two">
-                                  <option value="test three">
-                                </datalist>
-                              </div>
-                            </div>
-                            <div class="col-6 modal__porperty__item">
-                              <label>Price <span>*</span></label>
-                              <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Type Unit Price" aria-label="Type Unit Price" aria-describedby="basic-addon2">
-                                <div class="input-group-append">
-                                  <span class="input-group-text" id="basic-addon2">EGP</span>
+                              <div class="col-6 modal__porperty__item">
+                                <label>Listing Type <span>*</span></label>
+                                <div class="input__datalist">
+                                  <input list="listingtype" name="listingt" id="listingt" placeholder="For Sale / Rent">
+                                  <datalist id="listingtype">
+                                    <option value="test one">
+                                    <option value="test two">
+                                    <option value="test three">
+                                  </datalist>
                                 </div>
                               </div>
                             </div>
-
-                            <div class="col-6 modal__porperty__item">
-                              <label>Down Payment<span>*</span></label>
-                              <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Select Unit Type" aria-label="Select Unit Type" aria-describedby="basic-addon2">
-                                <div class="input-group-append">
-                                  <span class="input-group-text" id="basic-addon2">%</span>
+                          </div>
+                          <div class="modal__porperty__form modal__porperty__two">
+                            <div class="row">
+                              <div class="col-6 modal__porperty__item">
+                                <label>Finishing <span>*</span></label>
+                                <div class="input__datalist">
+                                  <input list="choosefinishing" name="choosefinish" id="choosefinish"
+                                    placeholder="Choose Finishing">
+                                  <datalist id="choosefinishing">
+                                    <option value="test one">
+                                    <option value="test two">
+                                    <option value="test three">
+                                  </datalist>
                                 </div>
                               </div>
-                            </div>
-
-                            <div class="col-6 modal__porperty__item">
-                              <label>Bedrooms</label>
-                              <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Number of Bedrooms">
-                              </div>
-                            </div>
-                            
-                            <div class="col-6 modal__porperty__item">
-                              <label>Bathrooms</label>
-                              <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Number of Bathrooms">
-                              </div>
-                            </div>
-
-                          </div>
-                        </div>
-                        <div class="modal__porperty__form modal__porperty__three">
-                          <div class="row">
-                            <div class="col-9 modal__porperty__item">
-                              <label>Full Name <span>*</span></label>
-                              <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Full Name">
-                              </div>
-                            </div>
-
-                            <div class="col-9 modal__porperty__item">
-                              <label>Email <span>*</span></label>
-                              <div class="input-group">
-                                <input type="email" class="form-control" placeholder="Email Address">
-                              </div>
-                            </div>
-
-                            <div class="col-9 modal__porperty__item">
-                              <label>Phone Number <span>*</span></label>
-                              <div class="input-group">
-                                <div class="input-group-prepend">
-                                  <span class="input-group-text" id="basic-addon2">+20</span>
+                              <div class="col-6 modal__porperty__item">
+                                <label>Delivery Date <span>*</span></label>
+                                <div class="input__datalist">
+                                  <input list="chooseyear" class="form-control" name="choosedate" id="choosedate"
+                                    placeholder="Choose Year">
+                                  <datalist id="chooseyear">
+                                    <option value="test one">
+                                    <option value="test two">
+                                    <option value="test three">
+                                  </datalist>
                                 </div>
-                                <input type="text" class="form-control" placeholder="Phone number" aria-label="Phone number" aria-describedby="basic-addon2">
                               </div>
+                              <div class="col-6 modal__porperty__item">
+                                <label>Price <span>*</span></label>
+                                <div class="input-group">
+                                  <input type="text" class="form-control" placeholder="Type Unit Price" aria-label="Type Unit Price" aria-describedby="basic-addon2">
+                                  <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon2">EGP</span>
+                                  </div>
+                                </div>
+                              </div>
+  
+                              <div class="col-6 modal__porperty__item">
+                                <label>Down Payment<span>*</span></label>
+                                <div class="input-group">
+                                  <input type="text" class="form-control" placeholder="Select Unit Type" aria-label="Select Unit Type" aria-describedby="basic-addon2">
+                                  <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon2">%</span>
+                                  </div>
+                                </div>
+                              </div>
+  
+                              <div class="col-6 modal__porperty__item">
+                                <label>Bedrooms</label>
+                                <div class="input-group">
+                                  <input type="text" class="form-control" placeholder="Number of Bedrooms">
+                                </div>
+                              </div>
+                              
+                              <div class="col-6 modal__porperty__item">
+                                <label>Bathrooms</label>
+                                <div class="input-group">
+                                  <input type="text" class="form-control" placeholder="Number of Bathrooms">
+                                </div>
+                              </div>
+  
                             </div>
-
-
                           </div>
-                        </div>
-
-                        <div class="row modal__porperty__buttons">
-                          <div class="col-6 modal__porperty__item modal__porperty__button">
-                            <button class="btn backmodel" id="modal__porperty__back">Back</button>
+                          <div class="modal__porperty__form modal__porperty__three">
+                            <div class="row">
+                              <div class="col-9 modal__porperty__item">
+                                <label>Full Name <span>*</span></label>
+                                <div class="input-group">
+                                  <input type="text" class="form-control" placeholder="Full Name">
+                                </div>
+                              </div>
+  
+                              <div class="col-9 modal__porperty__item">
+                                <label>Email <span>*</span></label>
+                                <div class="input-group">
+                                  <input type="email" class="form-control" placeholder="Email Address">
+                                </div>
+                              </div>
+  
+                              <div class="col-9 modal__porperty__item">
+                                <label>Phone Number <span>*</span></label>
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon2">+20</span>
+                                  </div>
+                                  <input type="text" class="form-control" placeholder="Phone number" aria-label="Phone number" aria-describedby="basic-addon2">
+                                </div>
+                              </div>
+  
+  
+                            </div>
                           </div>
-                          <div class="col-6 modal__porperty__item modal__porperty__button">
-                            <button class="btn nextmodel" id="modal__porperty__next">NEXT</button>
-                            <button class="btn submitmodel" id="modal__porperty__submit">SUBMIT</button>
+  
+                          <div class="row modal__porperty__buttons">
+                            <div class="col-6 modal__porperty__item modal__porperty__button">
+                              <button class="btn backmodel" id="modal__porperty__back">Back</button>
+                            </div>
+                            <div class="col-6 modal__porperty__item modal__porperty__button">
+                              <button class="btn nextmodel" id="modal__porperty__next">NEXT</button>
+                              <button class="btn submitmodel" id="modal__porperty__submit">SUBMIT</button>
+                            </div>
                           </div>
-                        </div>
-                      </form>
+                        </form>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-
-              <!-- Modal Register -->
-              <div class="modal fade modal__register" id="exampleModal" tabindex="-1"
-                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <h5 class="modal-title">REGISTER INTEREST</h5>
-                      <form>
-                        <div class="form-group">
-                          <input type="text" class="form-control" placeholder="FULL NAME" />
-                        </div>
-                        <div class="form-group">
-                          <input type="text" class="form-control" placeholder="EMAIL ADDRESS" />
-                        </div>
-
-                        <div class="input-group">
-                          <div class="input-group-prepend">
-                            <button class="btn btn-outline-secondary dropdown-toggle" type="button"
-                              data-toggle="dropdown" aria-expanded="false">
-                              +20
+  
+                <!-- Modal Register -->
+                <div class="modal fade modal__register" id="exampleModal" tabindex="-1"
+                  aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <h5 class="modal-title">REGISTER INTEREST</h5>
+                        <form>
+                          <div class="form-group">
+                            <input type="text" class="form-control" placeholder="FULL NAME" />
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" placeholder="EMAIL ADDRESS" />
+                          </div>
+  
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                data-toggle="dropdown" aria-expanded="false">
+                                +20
+                              </button>
+                              <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">+044</a>
+                                <a class="dropdown-item" href="#">+656</a>
+                                <a class="dropdown-item" href="#">+709</a>
+                              </div>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Text input with dropdown button"
+                              placeholder="PHONE NUMBER" />
+                          </div>
+                          <div class="form-checkbox">
+                            <h6>I am interested in</h6>
+                            <div class="form-check-inline">
+                              <label class="form-check-label" for="inlineCheckbox1">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="buy" />
+                                BUY
+                              </label>
+  
+                              <label class="form-check-label" for="inlineCheckbox2">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="rent" />
+                                RENT
+                              </label>
+  
+                              <label class="form-check-label" for="inlineCheckbox2">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="sell" />
+                                SELL
+                              </label>
+                            </div>
+                          </div>
+  
+                          <div class="modal-footer">
+                            <button type="button" class="btn register">
+                              REGISTER
                             </button>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="#">+044</a>
-                              <a class="dropdown-item" href="#">+656</a>
-                              <a class="dropdown-item" href="#">+709</a>
-                            </div>
                           </div>
-                          <input type="text" class="form-control" aria-label="Text input with dropdown button"
-                            placeholder="PHONE NUMBER" />
-                        </div>
-                        <div class="form-checkbox">
-                          <h6>I am interested in</h6>
-                          <div class="form-check-inline">
-                            <label class="form-check-label" for="inlineCheckbox1">
-                              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="buy" />
-                              BUY
-                            </label>
-
-                            <label class="form-check-label" for="inlineCheckbox2">
-                              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="rent" />
-                              RENT
-                            </label>
-
-                            <label class="form-check-label" for="inlineCheckbox2">
-                              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="sell" />
-                              SELL
-                            </label>
-                          </div>
-                        </div>
-
-                        <div class="modal-footer">
-                          <button type="button" class="btn register">
-                            REGISTER
-                          </button>
-                        </div>
-                      </form>
+                        </form>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </form>
+              </form>
+            </ul>
+           
+            
           </div>
         </nav>
       </div>
@@ -392,20 +396,7 @@
             <option value="test three">
           </datalist>
         </div>
-
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
     </div>
 
@@ -987,10 +978,12 @@
     </section>
   </footer>
   <!-- Vendor Js File -->
-  <script src="../js/vendor/jquery.slim.min.js"></script>
   <script src="../js/vendor/popper.min.js"></script>
-  <script src="../js/vendor/bootstrap.min.js"></script>
   <script src="../js/vendor/all.min.js"></script>
+  <script src="../js/vendor/jquery.slim.min.js"></script>
+  <script src="../js/vendor/bootstrap.min.js"></script>
+  <script src="../js/vendor/bootstrap.bundle.min.js"></script>
+  <script src="../js/vendor/owl.carousel.min.js"></script>
   <!-- Script Genral Js File -->
   <script src="../js/script.js"></script>
 </body>

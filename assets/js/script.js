@@ -1,3 +1,5 @@
+
+// owl developer
 var owldeveloper = $(".owl-developer");
 owldeveloper.owlCarousel({
   loop: false,
@@ -27,8 +29,7 @@ $(".PreviousBtndeveloper").click(function () {
     owldeveloper.trigger("prev.owl.carousel");
 });
 
-
-
+// owl developer project
 var owlproject = $(".latest_project");
 owlproject.owlCarousel({
   loop: false,
@@ -42,7 +43,7 @@ owlproject.owlCarousel({
       items: 1,
     },
     960: {
-      items: 2,
+      items: 1.5,
     },
     1200: {
       items: 3,
@@ -58,7 +59,7 @@ $(".PreviousBtnproject").click(function () {
     owlproject.trigger("prev.owl.carousel");
 });
 
-
+// owl developer similarpr
 
 var project__similarp = $(".project__similarpr");
 project__similarp.owlCarousel({
@@ -73,7 +74,7 @@ project__similarp.owlCarousel({
       items: 1,
     },
     960: {
-      items: 3,
+      items: 1.5,
     },
     1200: {
       items: 3.5,

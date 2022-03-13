@@ -5,7 +5,8 @@
   }
   &__header {
     margin: 25px 0;
-    height: 650px;
+    min-height: 650px;
+    max-height: auto;
     .img {
       .carousel-item {
         height: 600px;

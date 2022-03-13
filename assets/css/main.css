@@ -1331,7 +1331,7 @@ footer {
   font-weight: 600;
 }
 .projects__form .input__type {
-  width: 210px;
+  width: 260px;
   height: 48px;
   background: #ffffff;
   border: 1px solid #d4d4d4;
@@ -1350,7 +1350,7 @@ footer {
   outline: none;
 }
 .projects__form .input__project {
-  width: 210px;
+  width: 260px;
   height: 48px;
   background: #ffffff;
   border: 1px solid #d4d4d4;
@@ -1369,7 +1369,7 @@ footer {
   outline: none;
 }
 .projects__form .input__developers {
-  width: 230px;
+  width: 260px;
   height: 48px;
   background: #ffffff;
   border: 1px solid #d4d4d4;
@@ -1388,7 +1388,7 @@ footer {
   outline: none;
 }
 .projects__form .input__price {
-  width: 200px;
+  width: 260px;
   height: 48px;
   background: #ffffff;
   border: 1px solid #d4d4d4;
@@ -1407,7 +1407,7 @@ footer {
   outline: none;
 }
 .projects__form .input__more {
-  width: 180px;
+  width: 220px;
   height: 48px;
   background: #ffffff;
   border: 1px solid #d4d4d4;
@@ -1658,13 +1658,102 @@ footer {
   margin-left: 10px;
 }
 
+@media screen and (max-width: 1831px) {
+  .projects__form {
+    padding: 10px;
+  }
+  .projects__form .input__search {
+    width: 350px;
+    height: 48px;
+    overflow: hidden;
+    position: relative;
+    font-weight: normal;
+    font-size: 16px;
+  }
+  .projects__form .input__search input {
+    width: 270px;
+  }
+  .projects__form .input__search button {
+    float: left;
+    width: 80px;
+    font-weight: 500;
+  }
+  .projects__form .input__type {
+    width: 200px;
+  }
+  .projects__form .input__project {
+    width: 200px;
+  }
+  .projects__form .input__developers {
+    width: 200px;
+  }
+  .projects__form .input__price {
+    width: 200px;
+  }
+  .projects__form .input__more {
+    width: 180px;
+  }
+}
+@media screen and (max-width: 1421px) {
+  .projects__form {
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .projects__form .input__search {
+    margin: 5px 0;
+  }
+  .projects__form .input__type {
+    margin: 5px 0;
+  }
+  .projects__form .input__project {
+    margin: 5px 0;
+  }
+  .projects__form .input__developers {
+    margin: 5px 0;
+  }
+  .projects__form .input__price {
+    margin: 5px 0;
+  }
+  .projects__form .input__more {
+    margin: 5px 0;
+  }
+}
+@media screen and (max-width: 991px) {
+  .projects__form {
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .projects__form .input__search {
+    margin: 5px 0;
+  }
+  .projects__form .input__type {
+    margin: 5px 0;
+  }
+  .projects__form .input__project {
+    margin: 5px 0;
+  }
+  .projects__form .input__developers {
+    margin: 5px 0;
+  }
+  .projects__form .input__price {
+    margin: 5px 0;
+  }
+  .projects__form .input__more {
+    margin: 5px 0;
+  }
+}
 .project__contener {
   width: 95%;
   margin: 0 auto;
 }
 .project__header {
   margin: 25px 0;
-  height: 650px;
+  min-height: 650px;
+  max-height: auto;
 }
 .project__header .img .carousel-item {
   height: 600px;
