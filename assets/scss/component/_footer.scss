@@ -1,3 +1,4 @@
+// A- Style Footer Component.
 footer {
   min-height: 400px;
   max-height: auto;
@@ -17,6 +18,7 @@ footer {
       margin-top: 25px;
     }
   }
+  // B- Style Footer Connect Component.
   &__connect {
     margin: 20px 0;
     &__item {

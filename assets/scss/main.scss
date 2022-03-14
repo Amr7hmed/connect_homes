@@ -5,11 +5,13 @@
 /* 
     A- Variables Styles .
     B- Style Genaral Classes .
-      => B1-Style Class Header Commponent 
-      => B2- Style Class Navbar Commponent .
-      => B3- Style Mailbox NavBar Component To Media Queris.
-    D- Style Class Search Commponent .
     E- Import Style Components .
+      E-1- Import Style Navbar Component .
+      E-2- Import Style About Us Page .
+      E-3- Import Style Home Page .
+      E-4- Import Style Footer Component .
+      E-5- Import Style Projects Component .
+      E-6- Import Style Project Component .
  */
  /*
 
@@ -47,8 +49,6 @@ $font_14:14px;
 // Font Family
 $font_lato: 'Lato', sans-serif;
 $font_poppins: 'Poppins', sans-serif;
-
-// border: 1px solid #dbdbdb;
 // B- Style Genaral Classes .
 * {
     margin: 0;
@@ -79,16 +79,18 @@ $font_poppins: 'Poppins', sans-serif;
     background-color: inherit;
     color: inherit;
   }
-//  Import Style Header Component
-@import "./component/navbar.scss";
-//  Import Style About Us Page
-@import "./component/about.scss";
-//  Import Style Home Page
-@import "./component/home.scss";
-//  Import Style Footer Component
-@import "./component/footer.scss";
-//  Import Style Projects Component
-@import "./component/projects.scss";
-//  Import Style Project Component
-@import "./component/project.scss";
+  // E- Import Style Components .
+
+  // E-1- Import Style Navbar Component .
+  @import "./component/navbar.scss";
+  // E-2- Import Style About Us Page .
+  @import "./component/about.scss";
+  // E-3- Import Style Home Page .
+  @import "./component/home.scss";
+  // E-4- Import Style Footer Component .
+  @import "./component/footer.scss";
+  // E-5- Import Style Projects Component .
+  @import "./component/projects.scss";
+  // E-6- Import Style Project Component .
+  @import "./component/project.scss";
 

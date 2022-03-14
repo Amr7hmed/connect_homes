@@ -1,4 +1,14 @@
-//Style Header
+/*
+  A- Style Header Component .
+  B- Style Header Component To Media Queris.
+  c- Style Header Home Component To Media Queris.
+  D- Style Owl Carousel Component.
+  E- Style Featured Component.
+  F- Style Header Home Component To Media Queris.
+*/
+
+
+// A- Style Header Home Component
 .header {
   &__home {
     height: 590px;
@@ -92,7 +102,7 @@
     }
   }
 }
-// Style Header Component To Media Queris.
+// B- Style Header Home Component To Media Queris.
 @media screen and(max-width: 762px) {
   .header {
     &__home {
@@ -133,7 +143,7 @@
     }
   }
 }
-
+// C- Style Header Home Component To Media Queris.
 .home {
   &__section {
     margin: 25px 0;
@@ -176,8 +186,7 @@
     margin: 0 auto;
   }
 }
-
-// Owl Carousel
+// D- Style Owl Carousel Component .
 .home {
   // Owl Carousel Developers
   .owl-developers {
@@ -193,7 +202,6 @@
     }
   }
 }
-// Owl Carousel Projects
 .latest__project__item {
   border-radius: 5px !important;
   -webkit-box-shadow: 4px 7px 10px -4px rgba(143, 143, 143, 1);
@@ -264,7 +272,6 @@
     }
   }
 }
-// owl carousel
 .btns {
   display: flex;
   flex-direction: row;
@@ -278,7 +285,7 @@
   margin-left: 2px;
   cursor: pointer;
 }
-
+// E- Style Featured Component.
 .home {
   // Home Featured
   &__featured {
@@ -396,7 +403,6 @@
       }
     }
   }
-
   &__communication {
     margin-bottom: 60px;
     &__head {
@@ -504,8 +510,7 @@
   }
 }
 
-
-// Style NavBar Component To Media Queris.
+// F- Style Header Home Component To Media Queris.
 @media screen and(max-width: 991px) {
   .home {
     &__communication {

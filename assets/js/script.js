@@ -77,7 +77,7 @@ project__similarp.owlCarousel({
       items: 1.5,
     },
     1200: {
-      items: 3.5,
+      items: 3,
     },
   },
 });

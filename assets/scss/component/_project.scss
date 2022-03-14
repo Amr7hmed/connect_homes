@@ -1,8 +1,24 @@
+/*
+  A- Style project Page .
+    A- 1- Style project Header Component .
+    A-2- Style project About Component .
+    A-3- Style project Facilities Component . 
+    A-4- Style project Properties Component .
+    A-5- Style project Loction Component .
+    A-6- Style project About Developer Component .
+    A-8- Style project Similar Item Component .
+  B- Style Property Page .
+    B-1- Style Property Similar Projects Component .
+    B-2- Style Property Similar Item Component .
+*/
+
+// A- Style project Page .
 .project {
   &__contener {
     width: 95%;
     margin: 0 auto;
   }
+  // A- 1- Style project Header Component .
   &__header {
     margin: 25px 0;
     min-height: 650px;
@@ -79,6 +95,7 @@
       }
     }
   }
+  // A-2- Style project About Component .
   &__about {
     margin: 40px 0;
     padding: 10px 0;
@@ -131,6 +148,7 @@
       }
     }
   }
+  // A-3- Style project Facilities Component .
   &__facilities {
     margin: 40px 0;
     padding: 10px 0;
@@ -169,7 +187,7 @@
       }
     }
   }
-
+  // A-4- Style project Properties Component .
   &__properties {
     margin: 40px 0;
     padding: 10px 0;
@@ -240,7 +258,7 @@
       }
     }
   }
-
+// A-5- Style project Loction Component .
   &__loction {
     margin: 40px 0;
     padding: 10px 0;
@@ -277,7 +295,7 @@
       }
     }
   }
-
+  // A-6- Style project About Developer Component .
   &__aboutdeveloper {
     margin: 40px 0;
     padding: 10px 0;
@@ -339,6 +357,7 @@
       }
     }
   }
+  // A-7- Style project Similar Projects Component .
   &__similarprojects {
     margin: 40px 0;
     padding: 10px 0;
@@ -399,6 +418,7 @@
       }
     }
   }
+  // A-8- Style project Similar Item Component .
   &__similarpr__item {
     width: 530px;
     height: 400px;
@@ -457,8 +477,9 @@
     }
   }
 }
-
+// B- Style Property Page .
 .property{
+  // B-1- Style Property Similar Projects Component .
   &__similarprojects {
     margin: 40px 0;
     padding: 10px 0;
@@ -519,6 +540,7 @@
       }
     }
   }
+  // B-2- Style Property Similar Item Component .
   &__similarpr__item {
     background-position: center;
     background-size: cover;

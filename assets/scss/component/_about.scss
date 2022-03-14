@@ -1,5 +1,11 @@
-
-//Style Header
+/* 
+    A- Style Header Component .
+    B- Style About Section Component .
+    C- Style About Property Component .
+    E- Style About Component To Media Queris .
+ */
+ 
+// A- Style Header Component.
 .header {
   &__about {
     width: 100%;
@@ -38,8 +44,7 @@
     }
   }
 }
-
-
+// B- Style About Section Component
 .aboutus {
   &__section {
     margin: 25px 0;
@@ -148,6 +153,7 @@
       text-transform: uppercase;
     }
   }
+// C- Style About Property Component
   &__property {
     margin: 25px 0;
     width: 100%;
@@ -208,7 +214,7 @@
   }
 }
 
-// Style About Component To Media Queris.
+// E- Style About Component To Media Queris.
 @media screen and(max-width: 991px) {
   .aboutus {
     &__header {
