@@ -42,9 +42,10 @@
     }
     .detiles {
       height: 600px;
-      padding-left: 30px;
+      padding-right: 30px;
       text-transform: uppercase;
       width: 90%;
+      text-align: right;
       h3 {
         font-family: $font_lato;
         font-style: normal;
@@ -94,8 +95,8 @@
         font-weight: bold;
         font-size: $font_20;
         color: $red;
-        transition: all .5s;
-        &:hover{
+        transition: all 0.5s;
+        &:hover {
           color: #ffffff;
           background-color: $red;
           border: 4px solid #d4d4d4;
@@ -115,6 +116,7 @@
       color: #000000;
       margin: 25px 0;
       text-transform: uppercase;
+      text-align: right;
       h2 {
         position: relative;
         &::after {
@@ -123,21 +125,23 @@
           height: 2px;
           background-color: $red;
           display: inline-block;
-          margin: 0 0 10px 15px;
+          margin: 0 15px 10px 0;
         }
       }
     }
     &__body {
       margin: 25px 0;
+      direction: rtl;
       display: flex;
       flex-direction: row;
       font-family: $font_lato;
+      text-align: right;
       .logo {
         width: 110px;
         img {
           width: 95px;
           height: 80px;
-          margin-right: 10px;
+          margin-left: 10px;
         }
       }
       .detiles {
@@ -160,6 +164,7 @@
   &__facilities {
     margin: 40px 0;
     padding: 10px 0;
+    text-align: right;
     &__head {
       font-family: $font_lato;
       font-style: normal;
@@ -168,6 +173,7 @@
       color: #000000;
       margin: 25px 0 35px 0;
       text-transform: uppercase;
+      text-align: right;
       h2 {
         position: relative;
         &::after {
@@ -176,7 +182,7 @@
           height: 2px;
           background-color: $red;
           display: inline-block;
-          margin: 0 0 10px 15px;
+          margin: 0 15px 10px 0;
         }
       }
     }
@@ -190,7 +196,7 @@
         text-transform: uppercase;
         color: #112211;
         &:last-of-type {
-          margin-left: 20px;
+          margin-right: 20px;
         }
       }
     }
@@ -199,6 +205,7 @@
   &__properties {
     margin: 40px 0;
     padding: 10px 0;
+    text-align: right;
     &__head {
       font-family: $font_lato;
       font-style: normal;
@@ -207,6 +214,7 @@
       color: #000000;
       margin: 25px 0 35px 0;
       text-transform: uppercase;
+      text-align: right;
       h2 {
         position: relative;
         &::after {
@@ -215,7 +223,7 @@
           height: 2px;
           background-color: $red;
           display: inline-block;
-          margin: 0 0 10px 15px;
+          margin: 0 15px 10px 0;
         }
       }
     }
@@ -235,13 +243,14 @@
             height: 1px;
             border-bottom: 3px solid #00072d;
             display: inline-block;
-            margin: 0px 0px 8px 25px;
+            margin: 0px 25px 8px 0;
           }
           margin-bottom: 20px;
         }
         ul {
           li {
             width: 70%;
+            direction: rtl;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -266,10 +275,11 @@
       }
     }
   }
-// A-5- Style project Loction Component .
+  // A-5- Style project Loction Component .
   &__loction {
     margin: 40px 0;
     padding: 10px 0;
+    text-align: right;
     &__head {
       font-family: $font_lato;
       font-style: normal;
@@ -288,7 +298,7 @@
           border-bottom: 3px solid $red;
           background-color: $red;
           display: inline-block;
-          margin: 0 0 10px 15px;
+          margin: 0 15px 10px 0;
         }
       }
     }
@@ -307,11 +317,13 @@
   &__aboutdeveloper {
     margin: 40px 0;
     padding: 10px 0;
+    text-align: right;
     &__head {
       font-family: $font_lato;
       font-style: normal;
       font-weight: normal;
       margin: 25px 0 35px 0;
+      text-align: right;
       h2 {
         text-transform: uppercase;
         font-family: $font_lato;
@@ -325,11 +337,12 @@
           border-bottom: 3px solid $red;
           background-color: $red;
           display: inline-block;
-          margin: 0 0 10px 15px;
+          margin: 0 15px 10px 0;
         }
       }
     }
     &__body {
+      text-align: right;
       .imgcontrol {
         display: inline-block;
         .img {
@@ -339,7 +352,7 @@
           background-size: cover;
           border: 1px solid #d4d4d4;
           box-sizing: border-box;
-          margin-right: 30px;
+          margin-left: 30px;
         }
       }
       .detiles {
@@ -370,6 +383,7 @@
     margin: 40px 0;
     padding: 10px 0;
     position: relative;
+    text-align: right;
     &__head {
       font-family: $font_lato;
       font-style: normal;
@@ -388,7 +402,7 @@
           border-bottom: 3px solid $red;
           background-color: $red;
           display: inline-block;
-          margin: 0 0 10px 15px;
+          margin: 0 15px 10px 0;
         }
       }
     }
@@ -413,10 +427,10 @@
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           text-align: center;
           z-index: 3;
-          opacity: .8;
-          transition: opacity .5s;
+          opacity: 0.8;
+          transition: opacity 0.5s;
           border-radius: 5px;
-          &:hover{
+          &:hover {
             opacity: 1;
           }
         }
@@ -442,11 +456,12 @@
     border-radius: 5px;
     -webkit-box-shadow: 4px 7px 10px -4px #8f8f8f;
     -moz-box-shadow: 4px 7px 10px -4px #8f8f8f;
-  box-shadow: 4px 7px 10px -4px #8f8f8f;
+    box-shadow: 4px 7px 10px -4px #8f8f8f;
     box-sizing: border-box;
     overflow: hidden;
     margin: 10px auto;
     .body {
+      text-align: right;
       position: absolute;
       bottom: 0;
       left: 0;
@@ -464,14 +479,15 @@
         span {
           &:first-of-type {
             font-weight: bold;
-            margin-right: 5px;
+            margin-left: 5px;
           }
           &:last-of-type {
-            margin-left: 5px;
+            margin-right: 5px;
           }
         }
       }
       .detiles_project {
+        direction: rtl;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -480,19 +496,22 @@
           font-size: 16px;
           cursor: pointer;
           span {
-            margin-left: 5px !important;
+            margin-right: 5px !important;
           }
         }
         .price {
+          display: flex;
           span {
             &:first-of-type {
               font-weight: normal;
               font-size: 16px;
-              margin-right: 10px;
+              margin-left: 15px;
+              order: 1;
             }
             &:last-of-type {
               font-weight: 600;
               font-size: 20px;
+              order: 2;
             }
           }
         }
@@ -501,7 +520,7 @@
   }
 }
 // B- Style Property Page .
-.property{
+.property {
   // B-1- Style Property Similar Projects Component .
   &__similarprojects {
     margin: 40px 0;
@@ -512,6 +531,7 @@
       font-style: normal;
       font-weight: normal;
       margin: 25px 0 35px 0;
+      text-align: right;
       h2 {
         text-transform: uppercase;
         font-family: $font_lato;
@@ -525,7 +545,7 @@
           border-bottom: 3px solid $red;
           background-color: $red;
           display: inline-block;
-          margin: 0 0 10px 15px;
+          margin: 0 15px 10px 0;
         }
       }
     }
@@ -551,10 +571,10 @@
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           text-align: center;
           z-index: 3;
-          opacity: .8;
-          transition: opacity .5s;
+          opacity: 0.8;
+          transition: opacity 0.5s;
           border-radius: 5px;
-          &:hover{
+          &:hover {
             opacity: 1;
           }
         }
@@ -571,7 +591,7 @@
   }
   // B-2- Style Property Similar Item Component .
   &__similarpr__item {
-    > div{
+    > div {
       width: 500px;
       min-height: 600px;
       max-height: auto;
@@ -579,15 +599,16 @@
       background: #ffffff;
       -webkit-box-shadow: 4px 7px 10px -4px #8f8f8f;
       -moz-box-shadow: 4px 7px 10px -4px #8f8f8f;
-    box-shadow: 4px 7px 10px -4px #8f8f8f;
+      box-shadow: 4px 7px 10px -4px #8f8f8f;
       box-sizing: border-box;
       overflow: hidden;
       margin: 10px auto;
+      text-align: right;
       .img {
         height: 450px;
         width: 500px;
         position: relative;
-        img{
+        img {
           border-radius: 5px 5px 0px 0px !important;
           height: 450px;
           width: 100%;
@@ -596,7 +617,7 @@
           position: absolute;
           background: #ffffff;
           bottom: 10px;
-          right: 10px;
+          left: 10px;
           text-align: center;
           line-height: 35px;
           border-radius: 5px;
@@ -619,9 +640,11 @@
         border: 1px solid #dbdbdb;
         -webkit-box-shadow: 4px 7px 10px -4px #8f8f8f;
         -moz-box-shadow: 4px 7px 10px -4px #8f8f8f;
-      box-shadow: 4px 7px 10px -4px #8f8f8f;
+        box-shadow: 4px 7px 10px -4px #8f8f8f;
+        text-align: right;
         .head {
           font-family: $font_lato;
+          direction: rtl;
           display: flex;
           flex-direction: row;
           justify-content: space-between;
@@ -644,9 +667,16 @@
           font-weight: 400;
           line-height: 19px;
           letter-spacing: 0em;
-          text-align: left;
+          text-align: right;
+          direction: rtl;
+          display: flex;
+          cursor: pointer;
+          i{
+            order: 1;
+          }
           span {
-            margin-left: 15px;
+            order: 2;
+            margin-right: 15px;
           }
         }
         .details {
@@ -658,8 +688,10 @@
           font-style: normal;
           font-weight: 600;
           font-size: $font_16;
+          text-align: right;
+          direction: rtl;
           span {
-            margin-left: 10px;
+            margin-right: 10px;
           }
         }
       }

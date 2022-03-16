@@ -74,7 +74,7 @@
           padding: 0 15px;
           border: none;
           outline: none;
-          margin-right: 10px;
+          margin-left: 10px;
           &:focus {
             border: none;
             outline: none;
@@ -212,11 +212,11 @@
   background-color: $white_one;
   margin-bottom: 5px;
   text-transform: uppercase;
-  width: 100%;
+  width: 650px;
   height: auto;
+  background-color: #ffffff;
   .img {
     border-radius: 5px 5px 0px 0px !important;
-    width: 100%;
     position: relative;
     width: 650px;
     height: 480px;
@@ -226,18 +226,15 @@
       width: 160px;
       height: 55px;
       bottom: 10px;
-      right: 10px;
+      left: 10px;
       text-align: center;
       line-height: 55px;
       border-radius: 5px;
       font-size: $font_16;
-      margin-left: 8px;
       cursor: pointer;
-    }
-    img {
-      border-radius: 5px 5px 0px 0px !important;
-      width: 650px;
-      height: 480px;
+      span{
+        margin-left: 5px;
+      }
     }
   }
   .body {
@@ -246,6 +243,7 @@
     padding: 15px 10px;
     background-color: #ffffff;
     border-radius: 0px 0px 5px 5px;
+    text-align: right;
     h3 {
       font-size: $font_20;
       font-family: $font_lato;
@@ -255,6 +253,7 @@
       }
     }
     .detiles_project {
+      direction: rtl;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -262,8 +261,9 @@
       .locion {
         font-weight: normal;
         font-size: 16px;
+        cursor: pointer;
         span {
-          margin-left: 10px !important;
+          margin-right: 10px !important;
         }
       }
       .price {
@@ -286,6 +286,12 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  .customNextBtn{
+    order: 1;
+  }
+  .customPreviousBtn{
+    order: 2;
+  }
 }
 .customNextBtn,
 .customPreviousBtn {
@@ -356,13 +362,12 @@
           position: absolute;
           background-color: $white_three;
           bottom: 10px;
-          right: 10px;
+          left: 10px;
           text-align: center;
           line-height: 35px;
           border-radius: 5px;
           font-size: $font_16;
           font-weight: 600;
-          margin-left: 8px;
           color: $red;
           width: 90px;
           height: 35px;
@@ -375,8 +380,10 @@
         width: 100%;
         background-color: #ffffff;
         border-radius: 0px 0px 5px 5px;
+        text-align: right;
         .head {
           font-family: $font_lato;
+          direction: rtl;
           display: flex;
           flex-direction: row;
           justify-content: space-between;
@@ -399,13 +406,14 @@
           font-weight: 400;
           line-height: 19px;
           letter-spacing: 0em;
-          text-align: left;
+          text-align: right;
           cursor: pointer;
           span {
-            margin-left: 15px;
+            margin-right: 15px;
           }
         }
         .details {
+          direction: rtl;
           color: #6b6767;
           font-family: $font_lato;
           display: flex;
@@ -415,7 +423,7 @@
           font-weight: 600;
           font-size: $font_16;
           span {
-            margin-left: 10px;
+            margin-right: 10px;
           }
         }
       }
@@ -423,6 +431,7 @@
   }
   &__communication {
     margin-bottom: 60px;
+    text-align: right;
     &__head {
       margin: 50px 0 45px 0;
       text-align: center;
@@ -437,7 +446,7 @@
         height: 100%;
         position: relative;
         width: 300px;
-        text-align: left;
+        text-align: right;
         color: #000000;
         &::after {
           content: "";
@@ -447,13 +456,13 @@
           display: inline-block;
           position: absolute;
           bottom: -15px;
-          left: 0;
+          right: 0;
           z-index: 2;
         }
       }
     }
     &__form {
-      padding-right: 15px;
+      padding-left: 15px;
       width: 100%;
       height: auto;
       input {
@@ -497,8 +506,8 @@
     }
     &__office {
       height: 310px;
-      border-left: 2px solid $red;
-      padding-left: 30px;
+      border-right: 2px solid $red;
+      padding-right: 30px;
       font-family: $font_lato;
       color: #363636;
       h3 {
@@ -537,13 +546,13 @@
     &__communication {
       &__form {
         padding-bottom: 15px;
-        padding-right: 0;
+        padding-left: 0;
       }
       &__office {
         border-top: 2px solid $red;
-        border-left: none;
+        border-right: none;
         padding-top: 30px;
-        padding-left: 0;
+        padding-right: 0;
       }
     }
   }

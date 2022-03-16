@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* 
+    //====== Style Arabic ======//
     A- Variables Styles .
     B- Style Genaral Classes .
     E- Import Style Components .
@@ -27,12 +28,18 @@ $font18: 18px;
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
   background-color: #FFFEFE;
+  direction: rtl;
+}
+
+.owl-stage-outer {
+  direction: ltr !important;
 }
 
 a {
@@ -91,7 +98,7 @@ button:focus {
 .nav__top ul {
   height: 20px;
   width: 100%;
-  text-align: right;
+  text-align: left;
   margin: 10px 0;
 }
 .nav__top ul li {
@@ -101,14 +108,17 @@ button:focus {
   font-style: normal;
   font-weight: normal;
   line-height: 17px;
-  margin-left: 15px;
+  margin-right: 15px;
 }
 .nav__top ul li i {
   font-size: 18px !important;
 }
+.nav__top ul li:first-child {
+  transform: rotate(270deg);
+}
 .nav__top ul li:last-child {
   margin-left: 0;
-  margin-left: 25px;
+  margin-right: 25px;
 }
 .nav__bottom {
   width: 100%;
@@ -117,6 +127,7 @@ button:focus {
   border: 1px solid #d4d4d4;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  text-align: right;
 }
 .nav__bottom .nav__contener {
   height: 60px;
@@ -136,6 +147,7 @@ button:focus {
 }
 .nav__bottom .nav__contener nav.navbar div.navbar-collapse {
   width: 70%;
+  text-align: right;
 }
 .nav__bottom .nav__contener nav.navbar div.navbar-collapse ul.navbar-nav {
   width: 100%;
@@ -192,6 +204,12 @@ button:focus {
 }
 .modal__register .modal-header {
   border: none;
+  position: relative;
+}
+.modal__register .modal-header button {
+  position: absolute;
+  left: 0;
+  z-index: 10;
 }
 .modal__register .modal-body {
   padding: 0 2rem;
@@ -217,11 +235,11 @@ button:focus {
   margin-bottom: 15px;
 }
 .modal__register .modal-body .form-checkbox .form-check-inline .form-check-label {
-  margin-left: 30px;
+  margin-right: 30px;
   font-weight: 500;
 }
 .modal__register .modal-body .form-checkbox .form-check-inline .form-check-label .form-check-input {
-  margin-left: 10px;
+  margin-right: 10px;
 }
 .modal__register .modal-body .modal-footer {
   margin: 20px 0 30px 0;
@@ -251,6 +269,12 @@ button:focus {
 .modal__porperty .modal-header {
   border: none;
   padding: 0.5rem 1rem;
+  position: relative;
+}
+.modal__porperty .modal-header button {
+  position: absolute;
+  left: 0;
+  z-index: 10;
 }
 .modal__porperty .modal-body {
   padding: 0 2rem;
@@ -422,7 +446,7 @@ button:focus {
   .nav__bottom .nav__contener nav.navbar form.form-inline .porperty {
     background-color: transparent;
     margin: 0;
-    margin-left: 1rem;
+    margin-right: 1rem;
     color: #A71A28;
     border: 1px solid #A71A28;
   }
@@ -624,7 +648,8 @@ button:focus {
 .aboutus__property {
   margin: 25px 0;
   width: 100%;
-  height: 320px;
+  min-height: 320px;
+  max-height: auto;
   background: #eef6fa;
   position: relative;
 }
@@ -766,10 +791,11 @@ button:focus {
   margin: 0;
   background-color: #FEFEFE;
 }
-.header__home__list .input__datalist input {
+.header__home__list .input__datalist .select {
+  padding: 0px 8px;
   background-color: #FEFEFE;
-  height: 80px;
-  width: 220px;
+  height: 80px !important;
+  width: 220px !important;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -778,13 +804,14 @@ button:focus {
   padding: 0 15px;
   border: none;
   outline: none;
+  margin-left: 10px;
 }
-.header__home__list .input__datalist input:focus {
+.header__home__list .input__datalist .select:focus {
   border: none;
   outline: none;
 }
-.header__home__list .input__datalist datalist {
-  border: 1px solid #444444;
+.header__home__list .input__datalist .select option:first-of-type {
+  opacity: 0.8;
 }
 .header__home__list button {
   background-color: #A71A28;
@@ -831,7 +858,7 @@ button:focus {
   .header__home__list .input__datalist {
     margin-bottom: 2px;
   }
-  .header__home__list .input__datalist input {
+  .header__home__list .input__datalist .select {
     height: 65px;
     width: 300px;
   }
@@ -882,14 +909,13 @@ button:focus {
 .home .owl-developers {
   width: 95%;
 }
-.home .owl-developers .owl-item {
-  width: 130px !important;
-  height: 130px !important;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2) !important;
+.home .owl-developers .img {
+  width: 235px !important;
+  height: 235px !important;
 }
-.home .owl-developers .owl-item img {
-  width: 130px !important;
-  height: 130px !important;
+.home .owl-developers .img img {
+  width: 235px !important;
+  height: 235px !important;
 }
 
 .latest__project__item {
@@ -900,11 +926,15 @@ button:focus {
   background-color: #FCFCFC;
   margin-bottom: 5px;
   text-transform: uppercase;
+  width: 650px;
+  height: auto;
+  background-color: #ffffff;
 }
 .latest__project__item .img {
   border-radius: 5px 5px 0px 0px !important;
-  width: 100%;
   position: relative;
+  width: 650px;
+  height: 480px;
 }
 .latest__project__item .img .locion {
   position: absolute;
@@ -912,21 +942,23 @@ button:focus {
   width: 160px;
   height: 55px;
   bottom: 10px;
-  right: 10px;
+  left: 10px;
   text-align: center;
   line-height: 55px;
   border-radius: 5px;
   font-size: 16px;
-  margin-left: 8px;
+  cursor: pointer;
 }
-.latest__project__item .img img {
-  border-radius: 5px 5px 0px 0px !important;
-  width: 100%;
-  height: 100%;
+.latest__project__item .img .locion span {
+  margin-left: 5px;
 }
 .latest__project__item .body {
-  height: 94px;
+  height: auto;
+  width: 100%;
   padding: 15px 10px;
+  background-color: #ffffff;
+  border-radius: 0px 0px 5px 5px;
+  text-align: right;
 }
 .latest__project__item .body h3 {
   font-size: 20px;
@@ -937,6 +969,7 @@ button:focus {
   font-weight: bold;
 }
 .latest__project__item .body .detiles_project {
+  direction: rtl;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -945,14 +978,15 @@ button:focus {
 .latest__project__item .body .detiles_project .locion {
   font-weight: normal;
   font-size: 16px;
+  cursor: pointer;
 }
 .latest__project__item .body .detiles_project .locion span {
-  margin-left: 10px !important;
+  margin-right: 10px !important;
 }
 .latest__project__item .body .detiles_project .price span:first-of-type {
   font-weight: normal;
   font-size: 16px;
-  margin-left: 10px;
+  margin-right: 10px;
 }
 .latest__project__item .body .detiles_project .price span:last-of-type {
   font-weight: 600;
@@ -963,6 +997,12 @@ button:focus {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+}
+.btns .customNextBtn {
+  order: 1;
+}
+.btns .customPreviousBtn {
+  order: 2;
 }
 
 .customNextBtn,
@@ -1016,39 +1056,47 @@ button:focus {
   -moz-box-shadow: 4px 7px 10px -4px #8f8f8f;
   box-shadow: 4px 7px 10px -4px #8f8f8f;
   border-radius: 5px;
+  width: 100%;
+  height: auto;
 }
 .home__featured__item .img {
   border-radius: 5px 5px 0px 0px !important;
   height: 350px;
-  width: 100%;
+  width: 650px;
+  height: 350px;
   position: relative;
 }
 .home__featured__item .img img {
   border-radius: 5px 5px 0px 0px !important;
-  height: 100%;
-  width: 100%;
+  width: 650px;
+  height: 350px;
 }
 .home__featured__item .img .sale {
   position: absolute;
   background-color: #FEFEFE;
   bottom: 10px;
-  right: 10px;
+  left: 10px;
   text-align: center;
   line-height: 35px;
   border-radius: 5px;
   font-size: 16px;
   font-weight: 600;
-  margin-left: 8px;
   color: #A71A28;
   width: 90px;
   height: 35px;
+  cursor: pointer;
 }
 .home__featured__item .body {
-  height: 150px;
+  height: auto;
   padding: 20px 15px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 0px 0px 5px 5px;
+  text-align: right;
 }
 .home__featured__item .body .head {
   font-family: "Lato", sans-serif;
+  direction: rtl;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1072,11 +1120,13 @@ button:focus {
   line-height: 19px;
   letter-spacing: 0em;
   text-align: right;
+  cursor: pointer;
 }
 .home__featured__item .body .loction span {
-  margin-left: 15px;
+  margin-right: 15px;
 }
 .home__featured__item .body .details {
+  direction: rtl;
   color: #6b6767;
   font-family: "Lato", sans-serif;
   display: flex;
@@ -1087,10 +1137,11 @@ button:focus {
   font-size: 16px;
 }
 .home__featured__item .body .details span {
-  margin-left: 10px;
+  margin-right: 10px;
 }
 .home__communication {
   margin-bottom: 60px;
+  text-align: right;
 }
 .home__communication__head {
   margin: 50px 0 45px 0;
@@ -1118,11 +1169,13 @@ button:focus {
   display: inline-block;
   position: absolute;
   bottom: -15px;
-  left: 0;
+  right: 0;
   z-index: 2;
 }
 .home__communication__form {
-  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+  height: auto;
 }
 .home__communication__form input {
   width: 100%;
@@ -1164,7 +1217,7 @@ button:focus {
 }
 .home__communication__office {
   height: 310px;
-  border-left: 2px solid #A71A28;
+  border-right: 2px solid #A71A28;
   padding-right: 30px;
   font-family: "Lato", sans-serif;
   color: #363636;
@@ -1190,13 +1243,14 @@ button:focus {
   color: #363636;
 }
 .home__communication__office ul .socilemediu span {
-  margin-left: 15px;
+  margin-right: 15px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 991px) {
   .home__communication__form {
     padding-bottom: 15px;
-    padding-right: 0;
+    padding-left: 0;
   }
   .home__communication__office {
     border-top: 2px solid #A71A28;
@@ -1213,6 +1267,7 @@ footer {
   padding: 20px 0;
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
+  text-align: right;
 }
 
 .footer__contener {
@@ -1273,7 +1328,7 @@ footer {
   color: #FEFEFE;
 }
 .footer__socialmedia span:first-child {
-  margin-left: 15px;
+  margin-left: 10px;
 }
 .footer__copyrights {
   text-align: center;
@@ -1321,6 +1376,7 @@ footer {
   position: relative;
   font-weight: normal;
   font-size: 16px;
+  display: flex;
 }
 .projects__form .input__search span {
   position: absolute;
@@ -1329,7 +1385,7 @@ footer {
   color: #727272;
   position: absolute;
   top: 2px;
-  left: 2px;
+  right: 2px;
   width: 30px;
   height: 46px;
   line-height: 46px;
@@ -1337,7 +1393,7 @@ footer {
   cursor: pointer;
 }
 .projects__form .input__search input {
-  float: right;
+  float: left;
   width: 330px;
   height: 48px;
   background: #ffffff;
@@ -1347,6 +1403,7 @@ footer {
   outline: none;
   color: #727272;
   padding-right: 35px;
+  order: 1;
 }
 .projects__form .input__search button {
   float: right;
@@ -1359,6 +1416,7 @@ footer {
   box-sizing: border-box;
   outline: none;
   font-weight: 600;
+  order: 2;
 }
 .projects__form .input__type {
   width: 260px;
@@ -1368,16 +1426,25 @@ footer {
   box-sizing: border-box;
   border-radius: 2px;
 }
-.projects__form .input__type input {
+.projects__form .input__type .select {
   padding: 5px;
   width: 100%;
   height: 48px;
   outline: none;
   border: 1px solid #d4d4d4;
+  background-color: #FEFEFE;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #444444;
 }
-.projects__form .input__type:focus {
+.projects__form .input__type .select:focus {
   border: none;
   outline: none;
+}
+.projects__form .input__type .select option:first-of-type {
+  opacity: 0.8;
 }
 .projects__form .input__project {
   width: 260px;
@@ -1387,16 +1454,25 @@ footer {
   box-sizing: border-box;
   border-radius: 2px;
 }
-.projects__form .input__project input {
+.projects__form .input__project .select {
   padding: 5px;
   width: 100%;
   height: 48px;
   outline: none;
   border: 1px solid #d4d4d4;
+  background-color: #FEFEFE;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #444444;
 }
-.projects__form .input__project:focus {
+.projects__form .input__project .select:focus {
   border: none;
   outline: none;
+}
+.projects__form .input__project .select option:first-of-type {
+  opacity: 0.8;
 }
 .projects__form .input__developers {
   width: 260px;
@@ -1406,16 +1482,25 @@ footer {
   box-sizing: border-box;
   border-radius: 2px;
 }
-.projects__form .input__developers input {
+.projects__form .input__developers .select {
   padding: 5px;
   width: 100%;
   height: 48px;
   outline: none;
   border: 1px solid #d4d4d4;
+  background-color: #FEFEFE;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #444444;
 }
-.projects__form .input__developers:focus {
+.projects__form .input__developers .select:focus {
   border: none;
   outline: none;
+}
+.projects__form .input__developers .select option:first-of-type {
+  opacity: 0.8;
 }
 .projects__form .input__price {
   width: 260px;
@@ -1425,16 +1510,25 @@ footer {
   box-sizing: border-box;
   border-radius: 2px;
 }
-.projects__form .input__price input {
+.projects__form .input__price .select {
   padding: 5px;
   width: 100%;
   height: 48px;
   outline: none;
   border: 1px solid #d4d4d4;
+  background-color: #FEFEFE;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #444444;
 }
-.projects__form .input__price:focus {
+.projects__form .input__price .select:focus {
   border: none;
   outline: none;
+}
+.projects__form .input__price .select option:first-of-type {
+  opacity: 0.8;
 }
 .projects__form .input__more {
   width: 220px;
@@ -1444,18 +1538,31 @@ footer {
   box-sizing: border-box;
   border-radius: 2px;
 }
-.projects__form .input__more input {
+.projects__form .input__more .select {
   padding: 5px;
   width: 100%;
   height: 48px;
   outline: none;
   border: 1px solid #d4d4d4;
+  background-color: #FEFEFE;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #444444;
 }
-.projects__form .input__more:focus {
+.projects__form .input__more .select:focus {
   border: none;
   outline: none;
 }
+.projects__form .input__more .select option:first-of-type {
+  opacity: 0.8;
+}
+.projects__detiles {
+  text-align: right;
+}
 .projects__detiles .heads {
+  direction: rtl;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1468,6 +1575,9 @@ footer {
   font-size: 20px;
   line-height: 120%;
   color: #787878;
+}
+.projects__detiles .heads .sort {
+  direction: ltr;
 }
 .projects__detiles .heads .sort button {
   color: #00072D;
@@ -1482,7 +1592,7 @@ footer {
   width: 100%;
   height: 520px;
   filter: drop-shadow(0px 3.16315px 15.8157px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
+  border-radius: 5px;
   margin: 15px 0;
   font-family: "Lato", sans-serif;
   -webkit-box-shadow: 4px 7px 10px -4px #8f8f8f;
@@ -1490,10 +1600,9 @@ footer {
   box-shadow: 4px 7px 10px -4px #8f8f8f;
 }
 .projects__card .img {
-  width: 100%;
+  width: 650px;
   height: 400px;
   border-radius: 5px 5px 0px 0px !important;
-  width: 100%;
   position: relative;
 }
 .projects__card .img .locion {
@@ -1502,26 +1611,28 @@ footer {
   width: 160px;
   height: 55px;
   bottom: 10px;
-  right: 10px;
+  left: 10px;
   text-align: center;
   line-height: 55px;
   border-radius: 5px;
   font-size: 16px;
   margin-left: 8px;
   cursor: pointer;
+  z-index: 3;
 }
 .projects__card .img .locion span {
   margin-left: 10px;
 }
 .projects__card .img img {
   border-radius: 5px 5px 0px 0px !important;
-  width: 100%;
-  height: 100%;
+  width: 650px;
+  height: 400px;
 }
 .projects__card .body {
   background: #ffffff;
   width: 100%;
-  height: 120px;
+  min-height: 120px;
+  max-height: auto;
   padding: 15px 25px;
   border-radius: 0px 0px 5px 5px !important;
 }
@@ -1545,16 +1656,22 @@ footer {
   margin: 8px 0;
   text-transform: uppercase;
 }
+.projects__card .body .detiles_project .price {
+  display: flex;
+}
 .projects__card .body .detiles_project .price span:first-of-type {
-  margin: 0px 4px;
+  margin-left: 10px;
+  order: 1;
 }
 .projects__card .body .detiles_project .price span:last-of-type {
   font-weight: 600;
   font-size: 20px;
+  order: 2;
 }
 .projects__pagination {
   margin-bottom: 50px;
   font-family: "Lato", sans-serif;
+  direction: ltr;
 }
 .projects__pagination .pagination__previous {
   font-style: normal;
@@ -1606,15 +1723,16 @@ footer {
   width: 100%;
   height: 560px;
   filter: drop-shadow(0px 3.16315px 15.8157px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
+  border-radius: 5px;
   margin: 15px 0;
   font-family: "Lato", sans-serif;
   -webkit-box-shadow: 4px 7px 10px -4px #8f8f8f;
   -moz-box-shadow: 4px 7px 10px -4px #8f8f8f;
   box-shadow: 4px 7px 10px -4px #8f8f8f;
+  text-align: right;
 }
 .propertie__card .img {
-  width: 100%;
+  width: 650px;
   height: 400px;
   border-radius: 5px 5px 0px 0px !important;
   width: 100%;
@@ -1624,13 +1742,12 @@ footer {
   position: absolute;
   background-color: #FEFEFE;
   bottom: 10px;
-  right: 10px;
+  left: 10px;
   text-align: center;
   line-height: 35px;
   border-radius: 5px;
   font-size: 16px;
   font-weight: 600;
-  margin-left: 8px;
   color: #A71A28;
   width: 90px;
   height: 35px;
@@ -1638,15 +1755,19 @@ footer {
 }
 .propertie__card .img img {
   border-radius: 5px 5px 0px 0px !important;
-  width: 100%;
-  height: 100%;
+  width: 650px;
+  height: 400px;
 }
 .propertie__card .body {
-  height: 150px;
   padding: 20px 15px;
+  min-height: 150px;
+  max-height: auto;
+  border-radius: 0px 0px 5px 5px !important;
+  text-align: right;
 }
 .propertie__card .body .head {
   font-family: "Lato", sans-serif;
+  direction: rtl;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1670,13 +1791,17 @@ footer {
   line-height: 19px;
   letter-spacing: 0em;
   text-align: right;
+  direction: rtl;
+  display: flex;
 }
 .propertie__card .body .loction span {
-  margin-left: 15px;
+  margin-right: 15px;
 }
 .propertie__card .body .details {
   color: #6b6767;
   font-family: "Lato", sans-serif;
+  text-align: right;
+  direction: rtl;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1685,7 +1810,7 @@ footer {
   font-size: 16px;
 }
 .propertie__card .body .details span {
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 @media screen and (max-width: 1831px) {
@@ -1704,7 +1829,7 @@ footer {
     width: 270px;
   }
   .projects__form .input__search button {
-    float: right;
+    float: left;
     width: 80px;
     font-weight: 500;
   }
@@ -1799,12 +1924,14 @@ footer {
   max-height: auto;
 }
 .project__header .img .carousel-item {
-  height: 600px;
-  width: 100%;
+  height: 600px !important;
+  min-width: 90% !important;
+  max-width: 990px !important;
 }
 .project__header .img .carousel-item img {
-  width: 100%;
-  height: 100%;
+  height: 600px !important;
+  min-width: 100% !important;
+  max-width: 990px !important;
 }
 .project__header .img .carousel-control-prev,
 .project__header .img .carousel-control-next {
@@ -1816,6 +1943,7 @@ footer {
   padding-right: 30px;
   text-transform: uppercase;
   width: 90%;
+  text-align: right;
 }
 .project__header .detiles h3 {
   font-family: "Lato", sans-serif;
@@ -1862,6 +1990,12 @@ footer {
   font-weight: bold;
   font-size: 20px;
   color: #A71A28;
+  transition: all 0.5s;
+}
+.project__header .detiles button:hover {
+  color: #ffffff;
+  background-color: #A71A28;
+  border: 4px solid #d4d4d4;
 }
 .project__about {
   margin: 40px 0;
@@ -1875,6 +2009,7 @@ footer {
   color: #000000;
   margin: 25px 0;
   text-transform: uppercase;
+  text-align: right;
 }
 .project__about__head h2 {
   position: relative;
@@ -1885,13 +2020,15 @@ footer {
   height: 2px;
   background-color: #A71A28;
   display: inline-block;
-  margin: 0 0 10px 15px;
+  margin: 0 15px 10px 0;
 }
 .project__about__body {
   margin: 25px 0;
+  direction: rtl;
   display: flex;
   flex-direction: row;
   font-family: "Lato", sans-serif;
+  text-align: right;
 }
 .project__about__body .logo {
   width: 110px;
@@ -1918,6 +2055,7 @@ footer {
 .project__facilities {
   margin: 40px 0;
   padding: 10px 0;
+  text-align: right;
 }
 .project__facilities__head {
   font-family: "Lato", sans-serif;
@@ -1927,6 +2065,7 @@ footer {
   color: #000000;
   margin: 25px 0 35px 0;
   text-transform: uppercase;
+  text-align: right;
 }
 .project__facilities__head h2 {
   position: relative;
@@ -1937,7 +2076,7 @@ footer {
   height: 2px;
   background-color: #A71A28;
   display: inline-block;
-  margin: 0 0 10px 15px;
+  margin: 0 15px 10px 0;
 }
 .project__facilities .project__facilitie {
   font-family: "Lato", sans-serif;
@@ -1951,11 +2090,12 @@ footer {
   color: #112211;
 }
 .project__facilities .project__facilitie span:last-of-type {
-  margin-left: 20px;
+  margin-right: 20px;
 }
 .project__properties {
   margin: 40px 0;
   padding: 10px 0;
+  text-align: right;
 }
 .project__properties__head {
   font-family: "Lato", sans-serif;
@@ -1965,6 +2105,7 @@ footer {
   color: #000000;
   margin: 25px 0 35px 0;
   text-transform: uppercase;
+  text-align: right;
 }
 .project__properties__head h2 {
   position: relative;
@@ -1975,7 +2116,7 @@ footer {
   height: 2px;
   background-color: #A71A28;
   display: inline-block;
-  margin: 0 0 10px 15px;
+  margin: 0 15px 10px 0;
 }
 .project__properties__body .project__propertie {
   margin-bottom: 30px;
@@ -1995,10 +2136,11 @@ footer {
   height: 1px;
   border-bottom: 3px solid #00072d;
   display: inline-block;
-  margin: 0px 0px 8px 25px;
+  margin: 0px 25px 8px 0;
 }
 .project__properties__body .project__propertie ul li {
   width: 70%;
+  direction: rtl;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -2020,6 +2162,7 @@ footer {
 .project__loction {
   margin: 40px 0;
   padding: 10px 0;
+  text-align: right;
 }
 .project__loction__head {
   font-family: "Lato", sans-serif;
@@ -2041,7 +2184,7 @@ footer {
   border-bottom: 3px solid #A71A28;
   background-color: #A71A28;
   display: inline-block;
-  margin: 0 0 10px 15px;
+  margin: 0 15px 10px 0;
 }
 .project__loction__map {
   height: 500px;
@@ -2054,12 +2197,14 @@ footer {
 .project__aboutdeveloper {
   margin: 40px 0;
   padding: 10px 0;
+  text-align: right;
 }
 .project__aboutdeveloper__head {
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: normal;
   margin: 25px 0 35px 0;
+  text-align: right;
 }
 .project__aboutdeveloper__head h2 {
   text-transform: uppercase;
@@ -2075,7 +2220,10 @@ footer {
   border-bottom: 3px solid #A71A28;
   background-color: #A71A28;
   display: inline-block;
-  margin: 0 0 10px 15px;
+  margin: 0 15px 10px 0;
+}
+.project__aboutdeveloper__body {
+  text-align: right;
 }
 .project__aboutdeveloper__body .imgcontrol {
   display: inline-block;
@@ -2114,6 +2262,7 @@ footer {
   margin: 40px 0;
   padding: 10px 0;
   position: relative;
+  text-align: right;
 }
 .project__similarprojects__head {
   font-family: "Lato", sans-serif;
@@ -2135,7 +2284,7 @@ footer {
   border-bottom: 3px solid #A71A28;
   background-color: #A71A28;
   display: inline-block;
-  margin: 0 0 10px 15px;
+  margin: 0 15px 10px 0;
 }
 .project__similarprojects .btns {
   position: absolute;
@@ -2145,44 +2294,59 @@ footer {
   z-index: 2;
   width: 100%;
 }
-.project__similarprojects .btns div {
+.project__similarprojects .btns > div {
   width: 100%;
   position: relative;
   height: 50px;
 }
-.project__similarprojects .btns div button {
+.project__similarprojects .btns > div button {
   position: absolute;
   width: 50px;
   height: 50px;
-  left: 25px;
   top: 165px;
   color: #ffffff;
   background: #393939;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
   z-index: 3;
+  opacity: 0.8;
+  transition: opacity 0.5s;
+  border-radius: 5px;
 }
-.project__similarprojects .btns div .customPreviousBtn {
+.project__similarprojects .btns > div button:hover {
+  opacity: 1;
+}
+.project__similarprojects .btns > div .customPreviousBtn {
   top: 0;
   left: -2%;
 }
-.project__similarprojects .btns div .customNextBtn {
+.project__similarprojects .btns > div .customNextBtn {
   top: 0;
   left: 99%;
 }
 .project__similarpr__item {
   width: 530px;
-  height: 400px;
+  min-height: 400px;
+  max-height: auto;
   background-position: center;
   background-size: cover;
   position: relative;
+  border-radius: 5px;
+  -webkit-box-shadow: 4px 7px 10px -4px #8f8f8f;
+  -moz-box-shadow: 4px 7px 10px -4px #8f8f8f;
+  box-shadow: 4px 7px 10px -4px #8f8f8f;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 10px auto;
 }
 .project__similarpr__item .body {
+  text-align: right;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 84px;
+  min-height: 84px;
+  max-height: auto;
   background: #393939;
   color: #ffffff;
   padding: 15px 10px 10px 10px;
@@ -2198,9 +2362,10 @@ footer {
   margin-left: 5px;
 }
 .project__similarpr__item .body h3 span:last-of-type {
-  margin-left: 5px;
+  margin-right: 5px;
 }
 .project__similarpr__item .body .detiles_project {
+  direction: rtl;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -2208,18 +2373,24 @@ footer {
 .project__similarpr__item .body .detiles_project .locion {
   font-weight: normal;
   font-size: 16px;
+  cursor: pointer;
 }
 .project__similarpr__item .body .detiles_project .locion span {
-  margin-left: 5px !important;
+  margin-right: 5px !important;
+}
+.project__similarpr__item .body .detiles_project .price {
+  display: flex;
 }
 .project__similarpr__item .body .detiles_project .price span:first-of-type {
   font-weight: normal;
   font-size: 16px;
-  margin-left: 10px;
+  margin-left: 15px;
+  order: 1;
 }
 .project__similarpr__item .body .detiles_project .price span:last-of-type {
   font-weight: 600;
   font-size: 20px;
+  order: 2;
 }
 
 .property__similarprojects {
@@ -2232,6 +2403,7 @@ footer {
   font-style: normal;
   font-weight: normal;
   margin: 25px 0 35px 0;
+  text-align: right;
 }
 .property__similarprojects__head h2 {
   text-transform: uppercase;
@@ -2247,7 +2419,7 @@ footer {
   border-bottom: 3px solid #A71A28;
   background-color: #A71A28;
   display: inline-block;
-  margin: 0 0 10px 15px;
+  margin: 0 15px 10px 0;
 }
 .property__similarprojects .btns {
   position: absolute;
@@ -2273,6 +2445,12 @@ footer {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
   z-index: 3;
+  opacity: 0.8;
+  transition: opacity 0.5s;
+  border-radius: 5px;
+}
+.property__similarprojects .btns div button:hover {
+  opacity: 1;
 }
 .property__similarprojects .btns div .customPreviousBtn {
   top: 0;
@@ -2282,78 +2460,35 @@ footer {
   top: 0;
   left: 99%;
 }
-.property__similarpr__item {
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
-.property__similarpr__item .body {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 84px;
-  background: #393939;
-  color: #ffffff;
-  padding: 15px 10px 10px 10px;
-  text-transform: uppercase;
-}
-.property__similarpr__item .body h3 {
-  font-family: "Lato", sans-serif;
-  font-style: normal;
-  font-size: 20px;
-}
-.property__similarpr__item .body h3 span:first-of-type {
-  font-weight: bold;
-  margin-left: 5px;
-}
-.property__similarpr__item .body h3 span:last-of-type {
-  margin-left: 5px;
-}
-.property__similarpr__item .body .detiles_project {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.property__similarpr__item .body .detiles_project .locion {
-  font-weight: normal;
-  font-size: 16px;
-}
-.property__similarpr__item .body .detiles_project .locion span {
-  margin-left: 5px !important;
-}
-.property__similarpr__item .body .detiles_project .price span:first-of-type {
-  font-weight: normal;
-  font-size: 16px;
-  margin-left: 10px;
-}
-.property__similarpr__item .body .detiles_project .price span:last-of-type {
-  font-weight: 600;
-  font-size: 20px;
-}
-.property__similarpr__item {
+.property__similarpr__item > div {
   width: 500px;
-  height: 550px;
-  background: #ffffff;
+  min-height: 600px;
+  max-height: auto;
   border-radius: 5px;
+  background: #ffffff;
   -webkit-box-shadow: 4px 7px 10px -4px #8f8f8f;
   -moz-box-shadow: 4px 7px 10px -4px #8f8f8f;
   box-shadow: 4px 7px 10px -4px #8f8f8f;
-  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 10px auto;
+  text-align: right;
 }
-.property__similarpr__item .img {
-  background-position: center;
-  background-size: cover;
+.property__similarpr__item > div .img {
+  height: 450px;
+  width: 500px;
+  position: relative;
+}
+.property__similarpr__item > div .img img {
   border-radius: 5px 5px 0px 0px !important;
   height: 450px;
   width: 100%;
-  position: relative;
 }
-.property__similarpr__item .img .sale {
+.property__similarpr__item > div .img .sale {
   position: absolute;
   background: #ffffff;
   bottom: 10px;
-  right: 10px;
+  left: 10px;
   text-align: center;
   line-height: 35px;
   border-radius: 5px;
@@ -2363,21 +2498,30 @@ footer {
   color: #A71A28;
   width: 90px;
   height: 35px;
+  z-index: 3;
 }
-.property__similarpr__item .body {
-  height: 150px;
+.property__similarpr__item > div .body {
+  width: 500px;
+  min-height: 150px;
+  max-height: auto;
   padding: 10px 15px;
   background: #ffffff;
   border-radius: 0px 0px 5px 5px;
+  border: 1px solid #dbdbdb;
+  -webkit-box-shadow: 4px 7px 10px -4px #8f8f8f;
+  -moz-box-shadow: 4px 7px 10px -4px #8f8f8f;
+  box-shadow: 4px 7px 10px -4px #8f8f8f;
+  text-align: right;
 }
-.property__similarpr__item .body .head {
+.property__similarpr__item > div .body .head {
   font-family: "Lato", sans-serif;
+  direction: rtl;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   text-transform: uppercase;
 }
-.property__similarpr__item .body .head h3 {
+.property__similarpr__item > div .body .head h3 {
   font-size: 25px;
   font-style: normal;
   font-weight: 600;
@@ -2385,7 +2529,7 @@ footer {
   letter-spacing: 0em;
   color: #112211;
 }
-.property__similarpr__item .body .loction {
+.property__similarpr__item > div .body .loction {
   margin: 15px 0 20px 0;
   color: #828282;
   font-family: "Lato", sans-serif;
@@ -2395,11 +2539,18 @@ footer {
   line-height: 19px;
   letter-spacing: 0em;
   text-align: right;
+  direction: rtl;
+  display: flex;
+  cursor: pointer;
 }
-.property__similarpr__item .body .loction span {
-  margin-left: 15px;
+.property__similarpr__item > div .body .loction i {
+  order: 1;
 }
-.property__similarpr__item .body .details {
+.property__similarpr__item > div .body .loction span {
+  order: 2;
+  margin-right: 15px;
+}
+.property__similarpr__item > div .body .details {
   color: #6b6767;
   font-family: "Lato", sans-serif;
   display: flex;
@@ -2408,9 +2559,11 @@ footer {
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
+  text-align: right;
+  direction: rtl;
 }
-.property__similarpr__item .body .details span {
-  margin-left: 10px;
+.property__similarpr__item > div .body .details span {
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=mainar.css.map */

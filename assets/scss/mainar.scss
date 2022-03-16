@@ -3,7 +3,7 @@
 
 
 /* 
-    //====== Style English ======//
+    //====== Style Arabic ======//
     A- Variables Styles .
     B- Style Genaral Classes .
     E- Import Style Components .
@@ -60,7 +60,7 @@ $font_poppins: 'Poppins', sans-serif;
     box-sizing: border-box;
     font-family: $font_lato;
     background-color: #FFFEFE;
-    direction: ltr;
+    direction: rtl;
   }
   .owl-stage-outer{
     direction: ltr !important;
@@ -88,15 +88,15 @@ $font_poppins: 'Poppins', sans-serif;
   // E- Import Style Components .
 
   // E-1- Import Style Navbar Component .
-  @import "./component/navbar.scss";
+  @import "./componentar/navbar.scss";
   // E-2- Import Style About Us Page .
-  @import "./component/about.scss";
+  @import "./componentar/about.scss";
   // E-3- Import Style Home Page .
-  @import "./component/home.scss";
+  @import "./componentar/home.scss";
   // E-4- Import Style Footer Component .
-  @import "./component/footer.scss";
+  @import "./componentar/footer.scss";
   // E-5- Import Style Projects Component .
-  @import "./component/projects.scss";
+  @import "./componentar/projects.scss";
   // E-6- Import Style Project Component .
-  @import "./component/project.scss";
+  @import "./componentar/project.scss";
 

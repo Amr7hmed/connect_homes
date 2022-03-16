@@ -69,7 +69,7 @@
                   data-whatever="@mdo">
                   REGISTER NOW
                 </button>
-                
+
                 <!-- Modal Porperty -->
                 <div class="modal fade modal__porperty" id="porpertyModal" tabindex="-1"
                   aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -190,37 +190,39 @@
                               <div class="col-6 modal__porperty__item">
                                 <label>Price <span>*</span></label>
                                 <div class="input-group">
-                                  <input type="text" class="form-control" placeholder="Type Unit Price" aria-label="Type Unit Price" aria-describedby="basic-addon2">
+                                  <input type="text" class="form-control" placeholder="Type Unit Price"
+                                    aria-label="Type Unit Price" aria-describedby="basic-addon2">
                                   <div class="input-group-append">
                                     <span class="input-group-text" id="basic-addon2">EGP</span>
                                   </div>
                                 </div>
                               </div>
-  
+
                               <div class="col-6 modal__porperty__item">
                                 <label>Down Payment<span>*</span></label>
                                 <div class="input-group">
-                                  <input type="text" class="form-control" placeholder="Select Unit Type" aria-label="Select Unit Type" aria-describedby="basic-addon2">
+                                  <input type="text" class="form-control" placeholder="Select Unit Type"
+                                    aria-label="Select Unit Type" aria-describedby="basic-addon2">
                                   <div class="input-group-append">
                                     <span class="input-group-text" id="basic-addon2">%</span>
                                   </div>
                                 </div>
                               </div>
-  
+
                               <div class="col-6 modal__porperty__item">
                                 <label>Bedrooms</label>
                                 <div class="input-group">
                                   <input type="text" class="form-control" placeholder="Number of Bedrooms">
                                 </div>
                               </div>
-                              
+
                               <div class="col-6 modal__porperty__item">
                                 <label>Bathrooms</label>
                                 <div class="input-group">
                                   <input type="text" class="form-control" placeholder="Number of Bathrooms">
                                 </div>
                               </div>
-  
+
                             </div>
                           </div>
                           <div class="modal__porperty__form modal__porperty__three">
@@ -231,28 +233,29 @@
                                   <input type="text" class="form-control" placeholder="Full Name">
                                 </div>
                               </div>
-  
+
                               <div class="col-9 modal__porperty__item">
                                 <label>Email <span>*</span></label>
                                 <div class="input-group">
                                   <input type="email" class="form-control" placeholder="Email Address">
                                 </div>
                               </div>
-  
+
                               <div class="col-9 modal__porperty__item">
                                 <label>Phone Number <span>*</span></label>
                                 <div class="input-group">
                                   <div class="input-group-prepend">
                                     <span class="input-group-text" id="basic-addon2">+20</span>
                                   </div>
-                                  <input type="text" class="form-control" placeholder="Phone number" aria-label="Phone number" aria-describedby="basic-addon2">
+                                  <input type="text" class="form-control" placeholder="Phone number"
+                                    aria-label="Phone number" aria-describedby="basic-addon2">
                                 </div>
                               </div>
-  
-  
+
+
                             </div>
                           </div>
-  
+
                           <div class="row modal__porperty__buttons">
                             <div class="col-6 modal__porperty__item modal__porperty__button">
                               <button class="btn backmodel" id="modal__porperty__back">Back</button>
@@ -267,7 +270,7 @@
                     </div>
                   </div>
                 </div>
-  
+
                 <!-- Modal Register -->
                 <div class="modal fade modal__register" id="exampleModal" tabindex="-1"
                   aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -287,7 +290,7 @@
                           <div class="form-group">
                             <input type="text" class="form-control" placeholder="EMAIL ADDRESS" />
                           </div>
-  
+
                           <div class="input-group">
                             <div class="input-group-prepend">
                               <button class="btn btn-outline-secondary dropdown-toggle" type="button"
@@ -310,19 +313,19 @@
                                 <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="buy" />
                                 BUY
                               </label>
-  
+
                               <label class="form-check-label" for="inlineCheckbox2">
                                 <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="rent" />
                                 RENT
                               </label>
-  
+
                               <label class="form-check-label" for="inlineCheckbox2">
                                 <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="sell" />
                                 SELL
                               </label>
                             </div>
                           </div>
-  
+
                           <div class="modal-footer">
                             <button type="button" class="btn register">
                               REGISTER
@@ -335,8 +338,8 @@
                 </div>
               </form>
             </ul>
-           
-            
+
+
           </div>
         </nav>
       </div>
@@ -350,28 +353,32 @@
       <h3>AT BEST PRICES</h3>
       <div class="header__home__list">
         <div class="input__datalist">
-          <input list="locations" name="location" id="location" placeholder="Location">
-          <datalist id="locations">
-            <option value="location one">
-            <option value="location two">
-            <option value="location three">
-          </datalist>
+          <select name="location" id="location" class="select">
+            <option value="1">Test</option>
+            <option value="2">Test One</option>
+            <option value="3">Test Two</option>
+            <option value="4">Test Three</option>
+            <option value="5">Test Four</option>
+          </select>
         </div>
         <div class="input__datalist">
-          <input list="propertys" name="property" id="property" placeholder="Property Type">
-          <datalist id="propertys">
-            <option value="test one">
-            <option value="test two">
-            <option value="test three">
-          </datalist>
+          <select name="propertys" id="propertys" class="select">
+            <option value="1">Property Type</option>
+            <option value="2">Test One</option>
+            <option value="3">Test Two</option>
+            <option value="4">Test Three</option>
+            <option value="5">Test Four</option>
+          </select>
+
         </div>
         <div class="input__datalist">
-          <input list="areas" name="area" id="area" placeholder="Area">
-          <datalist id="areas">
-            <option value="test one">
-            <option value="test two">
-            <option value="test three">
-          </datalist>
+          <select name="areas" id="areas" class="select">
+            <option value="1">Area</option>
+            <option value="2">Test One</option>
+            <option value="3">Test Two</option>
+            <option value="4">Test Three</option>
+            <option value="5">Test Four</option>
+          </select>
         </div>
         <button class="btn">
           Search
@@ -399,53 +406,53 @@
           </div>
         </div>
         <div class="owl-carousel owl-theme owl-developer">
-          <div style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"> <img
-              style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"
+          <div style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;" class="img"> <img
+              style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important; width: 235px; height: 235px; margin: 0 auto;"
               src="/assets/image/home/developers/img-one.png" /> </div>
-          <div style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"> <img
-              style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"
+          <div style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"  class="img"> <img
+              style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important; width: 235px; height: 235px; margin: 0 auto;"
               src="/assets/image/home/developers/img-two.png" /> </div>
-          <div style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"> <img
-              style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"
+          <div style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"  class="img"> <img
+              style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important; width: 235px; height: 235px; margin: 0 auto;"
               src="/assets/image/home/developers/img-three.png" /> </div>
-          <div style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"> <img
-              style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"
+          <div style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"  class="img"> <img
+              style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important; width: 235px; height: 235px; margin: 0 auto;"
               src="/assets/image/home/developers/img-one.png" /> </div>
-          <div style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"> <img
-              style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"
+          <div style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"  class="img"> <img
+              style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important; width: 235px; height: 235px; margin: 0 auto;"
               src="/assets/image/home/developers/img-two.png" /> </div>
-          <div style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"> <img
-              style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"
+          <div style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"  class="img"> <img
+              style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important; width: 235px; height: 235px; margin: 0 auto;"
               src="/assets/image/home/developers/img-three.png" /> </div>
-          <div style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"> <img
-              style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"
+          <div style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"  class="img"> <img
+              style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important; width: 235px; height: 235px; margin: 0 auto;"
               src="/assets/image/home/developers/img-one.png" /> </div>
-          <div style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"> <img
-              style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"
+          <div style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"  class="img"> <img
+              style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important; width: 235px; height: 235px; margin: 0 auto;"
               src="/assets/image/home/developers/img-two.png" /> </div>
-          <div style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"> <img
-              style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"
+          <div style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"  class="img"> <img
+              style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important; width: 235px; height: 235px; margin: 0 auto;"
               src="/assets/image/home/developers/img-two.png" /> </div>
-          <div style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"> <img
-              style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"
+          <div style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"  class="img"> <img
+              style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important; width: 235px; height: 235px; margin: 0 auto;"
               src="/assets/image/home/developers/img-three.png" /> </div>
-          <div style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"> <img
-              style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"
+          <div style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"  class="img"> <img
+              style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important; width: 235px; height: 235px; margin: 0 auto;"
               src="/assets/image/home/developers/img-one.png" /> </div>
-          <div style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"> <img
-              style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"
+          <div style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"  class="img"> <img
+              style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important; width: 235px; height: 235px; margin: 0 auto;"
               src="/assets/image/home/developers/img-two.png" /> </div>
-          <div style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"> <img
-              style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"
+          <div style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"  class="img"> <img
+              style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important; width: 235px; height: 235px; margin: 0 auto;"
               src="/assets/image/home/developers/img-two.png" /> </div>
-          <div style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"> <img
-              style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"
+          <div style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"  class="img"> <img
+              style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important; width: 235px; height: 235px; margin: 0 auto;"
               src="/assets/image/home/developers/img-three.png" /> </div>
-          <div style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"> <img
-              style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"
+          <div style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"  class="img"> <img
+              style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important; width: 235px; height: 235px; margin: 0 auto;"
               src="/assets/image/home/developers/img-one.png" /> </div>
-          <div style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"> <img
-              style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"
+          <div style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important;"  class="img"> <img
+              style="box-shadow: 0 1px 1px rgb(0 0 0 / 0.2) !important; width: 235px; height: 235px; margin: 0 auto;"
               src="/assets/image/home/developers/img-two.png" /> </div>
         </div>
 
@@ -756,54 +763,54 @@
     </div>
   </section>
 
-<section class="home__section home__communication">
-  <div class="home__contener">
-  <div class="home__communication__head">
-    <h2>GET IN TOUCH</h2>
-  </div>
-    <div class="row">
-      <div class="col-md-12 col-lg-6">
-        <div class="home__communication__form">
-          <input type="email" class="form-control"  placeholder="FULL NAME">
-          <input type="email" class="form-control"  placeholder="EMAIL ADDRESS">
-          <textarea class="form-control"  placeholder="YOUR MESSAGE" ></textarea>
-          <button class="btn">SEND</button>
-        </div>
+  <section class="home__section home__communication">
+    <div class="home__contener">
+      <div class="home__communication__head">
+        <h2>GET IN TOUCH</h2>
       </div>
-      <div class="col-md-12 col-lg-6">
-        <div class="home__communication__office">
-          <h3>Sales Office</h3>
-          <ul>
-            <li>
-              <i class="fa-solid fa-location-dot"></i>
-              <span>220 Office Building, Section 2, 90-North
-                New Cairo , Egypt </span>
-            </li>
-            <li>
-              <i class="fa-solid fa-phone"></i>
-              <span>
-                (+20) 102-8099-992
-              </span>
-            </li>
-            <li>
-              <i class="fa-solid fa-envelope"></i>
-              <span>
-                info@connecthomes.co
-              </span>
-            </li>
-            <p class="socilemediu">
-              <span><i class="fa-brands fa-linkedin"></i></span>
-              <span><i class="fa-brands fa-facebook-f"></i></span>
-              <span><i class="fa-brands fa-instagram"></i></span>
+      <div class="row">
+        <div class="col-md-12 col-lg-6">
+          <div class="home__communication__form">
+            <input type="email" class="form-control" placeholder="FULL NAME">
+            <input type="email" class="form-control" placeholder="EMAIL ADDRESS">
+            <textarea class="form-control" placeholder="YOUR MESSAGE"></textarea>
+            <button class="btn">SEND</button>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-6">
+          <div class="home__communication__office">
+            <h3>Sales Office</h3>
+            <ul>
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>220 Office Building, Section 2, 90-North
+                  New Cairo , Egypt </span>
+              </li>
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                <span>
+                  (+20) 102-8099-992
+                </span>
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <span>
+                  info@connecthomes.co
+                </span>
+              </li>
+              <p class="socilemediu">
+                <span><a href="#"><i class="fa-brands fa-linkedin"></i></a></span>
+                <span><a href="#"><i class="fa-brands fa-facebook-f"></i></a></span>
+                <span><a href="#"><i class="fa-brands fa-instagram"></i></a></span>
 
-            </p>
-          </ul>
+              </p>
+            </ul>
+          </div>
         </div>
       </div>
-  </div>
-</div>
-  
-</section>
+    </div>
+
+  </section>
   <!--Footer Component-->
   <footer>
     <section class="footer__contener">
@@ -939,4 +946,3 @@
 </body>
 
 </html>
-
