@@ -447,71 +447,78 @@
   }
   // A-8- Style project Similar Item Component .
   &__similarpr__item {
-    width: 530px;
-    min-height: 400px;
-    max-height: auto;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    border-radius: 5px;
-    -webkit-box-shadow: 4px 7px 10px -4px #8f8f8f;
-    -moz-box-shadow: 4px 7px 10px -4px #8f8f8f;
-    box-shadow: 4px 7px 10px -4px #8f8f8f;
-    box-sizing: border-box;
-    overflow: hidden;
-    margin: 10px auto;
-    .body {
-      text-align: right;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      min-height: 84px;
+    > div {
+      width: 95%;
+      min-height: 400px;
       max-height: auto;
-      background: #393939;
-      color: #ffffff;
-      padding: 15px 10px 10px 10px;
-      text-transform: uppercase;
-      h3 {
-        font-family: $font_lato;
-        font-style: normal;
-        font-size: $font_20;
-        span {
-          &:first-of-type {
-            font-weight: bold;
-            margin-left: 5px;
-          }
-          &:last-of-type {
-            margin-right: 5px;
-          }
+      border-radius: 5px;
+      background: #ffffff;
+      -webkit-box-shadow: 4px 7px 10px -4px #8f8f8f;
+      -moz-box-shadow: 4px 7px 10px -4px #8f8f8f;
+      box-shadow: 4px 7px 10px -4px #8f8f8f;
+      box-sizing: border-box;
+      overflow: hidden;
+      margin: 10px auto;
+      .img {
+        height: 450px;
+        width: 100%;
+        position: relative;
+        img {
+          border-radius: 5px 5px 0px 0px !important;
+          height: 450px;
+          width: 100%;
         }
       }
-      .detiles_project {
-        direction: rtl;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        .locion {
-          font-weight: normal;
-          font-size: 16px;
-          cursor: pointer;
-          span {
-            margin-right: 5px !important;
-          }
-        }
-        .price {
-          display: flex;
+      .body {
+        text-align: right;
+        width: 100%;
+        min-height: 84px;
+        max-height: auto;
+        background: #393939;
+        color: #ffffff;
+        padding: 15px 10px 10px 10px;
+        text-transform: uppercase;
+        h3 {
+          font-family: $font_lato;
+          font-style: normal;
+          font-size: $font_20;
           span {
             &:first-of-type {
-              font-weight: normal;
-              font-size: 16px;
-              margin-left: 15px;
-              order: 1;
+              font-weight: bold;
+              margin-left: 5px;
             }
             &:last-of-type {
-              font-weight: 600;
-              font-size: 20px;
-              order: 2;
+              margin-right: 5px;
+            }
+          }
+        }
+        .detiles_project {
+          direction: rtl;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          .locion {
+            font-weight: normal;
+            font-size: 16px;
+            cursor: pointer;
+            span {
+              margin-right: 5px !important;
+            }
+          }
+          .price {
+            display: flex;
+            span {
+              &:first-of-type {
+                font-weight: normal;
+                font-size: 16px;
+                margin-left: 15px;
+                order: 1;
+              }
+              &:last-of-type {
+                font-weight: 600;
+                font-size: 20px;
+                order: 2;
+              }
             }
           }
         }
@@ -592,7 +599,7 @@
   // B-2- Style Property Similar Item Component .
   &__similarpr__item {
     > div {
-      width: 500px;
+      width: 95%;
       min-height: 600px;
       max-height: auto;
       border-radius: 5px;
@@ -606,7 +613,7 @@
       text-align: right;
       .img {
         height: 450px;
-        width: 500px;
+        width: 100%;
         position: relative;
         img {
           border-radius: 5px 5px 0px 0px !important;
@@ -631,7 +638,7 @@
         }
       }
       .body {
-        width: 500px;
+        width: 100%;
         min-height: 150px;
         max-height: auto;
         padding: 10px 15px;

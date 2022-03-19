@@ -910,11 +910,11 @@ button:focus {
   width: 95%;
 }
 .home .owl-developers .img {
-  width: 235px !important;
+  width: 100% !important;
   height: 235px !important;
 }
 .home .owl-developers .img img {
-  width: 235px !important;
+  width: 100% !important;
   height: 235px !important;
 }
 
@@ -923,17 +923,17 @@ button:focus {
   -webkit-box-shadow: 4px 7px 10px -4px #8f8f8f;
   -moz-box-shadow: 4px 7px 10px -4px #8f8f8f;
   box-shadow: 4px 7px 10px -4px #8f8f8f;
-  background-color: #FCFCFC;
+  background-color: #ffffff;
   margin-bottom: 5px;
   text-transform: uppercase;
-  width: 650px;
+  width: 95%;
   height: auto;
   background-color: #ffffff;
 }
 .latest__project__item .img {
   border-radius: 5px 5px 0px 0px !important;
   position: relative;
-  width: 650px;
+  width: 100%;
   height: 480px;
 }
 .latest__project__item .img .locion {
@@ -951,6 +951,11 @@ button:focus {
 }
 .latest__project__item .img .locion span {
   margin-left: 5px;
+}
+.latest__project__item .img img {
+  border-radius: 5px 5px 0px 0px !important;
+  width: 100%;
+  height: 480px;
 }
 .latest__project__item .body {
   height: auto;
@@ -1062,13 +1067,12 @@ button:focus {
 .home__featured__item .img {
   border-radius: 5px 5px 0px 0px !important;
   height: 350px;
-  width: 650px;
-  height: 350px;
+  width: 100%;
   position: relative;
 }
 .home__featured__item .img img {
   border-radius: 5px 5px 0px 0px !important;
-  width: 650px;
+  width: 100%;
   height: 350px;
 }
 .home__featured__item .img .sale {
@@ -1590,7 +1594,83 @@ footer {
 }
 .projects__card {
   width: 100%;
-  height: 520px;
+  min-height: 520px;
+  max-height: auto;
+  filter: drop-shadow(0px 3.16315px 15.8157px rgba(0, 0, 0, 0.15));
+  border-radius: 5px;
+  margin: 15px;
+  font-family: "Lato", sans-serif;
+  -webkit-box-shadow: 4px 7px 10px -4px #8f8f8f;
+  -moz-box-shadow: 4px 7px 10px -4px #8f8f8f;
+  box-shadow: 4px 7px 10px -4px #8f8f8f;
+}
+.projects__card .img {
+  width: 100%;
+  border-radius: 5px 5px 0px 0px !important;
+  position: relative;
+}
+.projects__card .img .locion {
+  position: absolute;
+  background-color: #FEFEFE;
+  width: 160px;
+  height: 55px;
+  bottom: 10px;
+  right: 10px;
+  text-align: center;
+  line-height: 55px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 8px;
+  cursor: pointer;
+  z-index: 3;
+}
+.projects__card .img .locion span {
+  margin-left: 10px;
+}
+.projects__card .img img {
+  border-radius: 5px 5px 0px 0px !important;
+  width: 100%;
+  height: 400px;
+}
+.projects__card .body {
+  background: #ffffff;
+  width: 100%;
+  min-height: 120px;
+  max-height: auto;
+  padding: 15px 25px;
+  border-radius: 0px 0px 5px 5px !important;
+}
+.projects__card .body h3 {
+  font-family: "Lato", sans-serif;
+  color: #3d3d3d;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+.projects__card .body .detiles_project {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #3d3d3d;
+}
+.projects__card .body .detiles_project .locion {
+  margin: 8px 0;
+  text-transform: uppercase;
+}
+.projects__card .body .detiles_project .price span:first-of-type {
+  margin: 0px 4px;
+}
+.projects__card .body .detiles_project .price span:last-of-type {
+  font-weight: 600;
+  font-size: 20px;
+}
+.projects__card {
+  width: 100%;
+  min-height: 520px;
+  max-height: auto;
   filter: drop-shadow(0px 3.16315px 15.8157px rgba(0, 0, 0, 0.15));
   border-radius: 5px;
   margin: 15px 0;
@@ -1600,7 +1680,7 @@ footer {
   box-shadow: 4px 7px 10px -4px #8f8f8f;
 }
 .projects__card .img {
-  width: 650px;
+  width: 100%;
   height: 400px;
   border-radius: 5px 5px 0px 0px !important;
   position: relative;
@@ -1625,7 +1705,7 @@ footer {
 }
 .projects__card .img img {
   border-radius: 5px 5px 0px 0px !important;
-  width: 650px;
+  width: 100%;
   height: 400px;
 }
 .projects__card .body {
@@ -1721,7 +1801,8 @@ footer {
 
 .propertie__card {
   width: 100%;
-  height: 560px;
+  min-height: 560px;
+  max-height: auto;
   filter: drop-shadow(0px 3.16315px 15.8157px rgba(0, 0, 0, 0.15));
   border-radius: 5px;
   margin: 15px 0;
@@ -1732,7 +1813,7 @@ footer {
   text-align: right;
 }
 .propertie__card .img {
-  width: 650px;
+  width: 100%;
   height: 400px;
   border-radius: 5px 5px 0px 0px !important;
   width: 100%;
@@ -1755,7 +1836,7 @@ footer {
 }
 .propertie__card .img img {
   border-radius: 5px 5px 0px 0px !important;
-  width: 650px;
+  width: 100%;
   height: 400px;
 }
 .propertie__card .body {
@@ -1887,18 +1968,23 @@ footer {
   }
   .projects__form .input__type {
     margin: 5px 0;
+    width: 350px;
   }
   .projects__form .input__project {
     margin: 5px 0;
+    width: 350px;
   }
   .projects__form .input__developers {
     margin: 5px 0;
+    width: 350px;
   }
   .projects__form .input__price {
     margin: 5px 0;
+    width: 350px;
   }
   .projects__form .input__more {
     margin: 5px 0;
+    width: 350px;
   }
 }
 /*
@@ -2324,14 +2410,12 @@ footer {
   top: 0;
   left: 99%;
 }
-.project__similarpr__item {
-  width: 530px;
+.project__similarpr__item > div {
+  width: 95%;
   min-height: 400px;
   max-height: auto;
-  background-position: center;
-  background-size: cover;
-  position: relative;
   border-radius: 5px;
+  background: #ffffff;
   -webkit-box-shadow: 4px 7px 10px -4px #8f8f8f;
   -moz-box-shadow: 4px 7px 10px -4px #8f8f8f;
   box-shadow: 4px 7px 10px -4px #8f8f8f;
@@ -2339,11 +2423,18 @@ footer {
   overflow: hidden;
   margin: 10px auto;
 }
-.project__similarpr__item .body {
+.project__similarpr__item > div .img {
+  height: 450px;
+  width: 100%;
+  position: relative;
+}
+.project__similarpr__item > div .img img {
+  border-radius: 5px 5px 0px 0px !important;
+  height: 450px;
+  width: 100%;
+}
+.project__similarpr__item > div .body {
   text-align: right;
-  position: absolute;
-  bottom: 0;
-  left: 0;
   width: 100%;
   min-height: 84px;
   max-height: auto;
@@ -2352,42 +2443,42 @@ footer {
   padding: 15px 10px 10px 10px;
   text-transform: uppercase;
 }
-.project__similarpr__item .body h3 {
+.project__similarpr__item > div .body h3 {
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-size: 20px;
 }
-.project__similarpr__item .body h3 span:first-of-type {
+.project__similarpr__item > div .body h3 span:first-of-type {
   font-weight: bold;
   margin-left: 5px;
 }
-.project__similarpr__item .body h3 span:last-of-type {
+.project__similarpr__item > div .body h3 span:last-of-type {
   margin-right: 5px;
 }
-.project__similarpr__item .body .detiles_project {
+.project__similarpr__item > div .body .detiles_project {
   direction: rtl;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.project__similarpr__item .body .detiles_project .locion {
+.project__similarpr__item > div .body .detiles_project .locion {
   font-weight: normal;
   font-size: 16px;
   cursor: pointer;
 }
-.project__similarpr__item .body .detiles_project .locion span {
+.project__similarpr__item > div .body .detiles_project .locion span {
   margin-right: 5px !important;
 }
-.project__similarpr__item .body .detiles_project .price {
+.project__similarpr__item > div .body .detiles_project .price {
   display: flex;
 }
-.project__similarpr__item .body .detiles_project .price span:first-of-type {
+.project__similarpr__item > div .body .detiles_project .price span:first-of-type {
   font-weight: normal;
   font-size: 16px;
   margin-left: 15px;
   order: 1;
 }
-.project__similarpr__item .body .detiles_project .price span:last-of-type {
+.project__similarpr__item > div .body .detiles_project .price span:last-of-type {
   font-weight: 600;
   font-size: 20px;
   order: 2;
@@ -2461,7 +2552,7 @@ footer {
   left: 99%;
 }
 .property__similarpr__item > div {
-  width: 500px;
+  width: 95%;
   min-height: 600px;
   max-height: auto;
   border-radius: 5px;
@@ -2476,7 +2567,7 @@ footer {
 }
 .property__similarpr__item > div .img {
   height: 450px;
-  width: 500px;
+  width: 100%;
   position: relative;
 }
 .property__similarpr__item > div .img img {
@@ -2501,7 +2592,7 @@ footer {
   z-index: 3;
 }
 .property__similarpr__item > div .body {
-  width: 500px;
+  width: 100%;
   min-height: 150px;
   max-height: auto;
   padding: 10px 15px;

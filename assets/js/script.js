@@ -46,7 +46,7 @@ owlproject.owlCarousel({
       items: 1.5,
     },
     1200: {
-      items: 3,
+      items: 2.5,
     },
   },
 });
@@ -77,7 +77,7 @@ project__similarp.owlCarousel({
       items: 1.5,
     },
     1200: {
-      items: 3,
+      items: 2.5,
     },
   },
 });
@@ -107,7 +107,7 @@ property__similarpr.owlCarousel({
       items: 1.5,
     },
     1200: {
-      items: 3.5,
+      items: 2.5,
     },
   },
 });
